@@ -10886,13 +10886,7 @@ textarea.form-control {
   }
   100% {
     stroke-dasharray: 89, 200;
-<<<<<<< Updated upstream
-    stroke-dashoffset: -136px; } }
-
-.SCE_center{
-  display: flex;
-}
-=======
+    stroke-dashoffset: -136px; 
     stroke-dashoffset: -136px;
   }
 }
@@ -10900,6 +10894,9 @@ textarea.form-control {
 /*# sourceMappingURL=style.css.map */
 
 
+.SCE_center {
+  display: flex;
+}
 
 .sce-card {
   padding: 1rem;
@@ -10985,4 +10982,3 @@ textarea.form-control {
   position: absolute;
   border: 1px solid black;
 }
->>>>>>> Stashed changes
