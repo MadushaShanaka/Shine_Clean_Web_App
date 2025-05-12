@@ -1,0 +1,43 @@
+[
+    {
+      "number":"One",
+      "question": "What areas do you service?",
+      "answer": "We provide cleaning services across Perth and surrounding suburbs within a 30 km radius of Perth CBD. If you are unsure whether we cover your area, feel free to contact us, we are happy to confirm!"
+    },
+    {
+      "number":"Two",
+      "question": "How can I book a cleaning service?",
+      "answer": "You can book via our online contact form, call us directly, or email. We will get back to you promptly to confirm the booking."
+    },
+    {
+      "number":"Three",
+      "question": "Do I need to be home during the cleaning?",
+      "answer": "It is up to you! Many clients provide access and return to a sparkling clean home. Rest assured, our police-checked staff treat your space with the utmost respect and care."
+    },
+    {
+      "number":"Four",
+      "question": "Do you bring your own cleaning supplies and equipment?",
+      "answer": "Yes, we bring all necessary cleaning products and tools. We use eco-friendly and non-toxic products, but if you prefer specific items, just let us know in advance."
+    },
+    {
+      "number":"Five",
+      "question": "What if I am not happy with the service?",
+      "answer": "Your satisfaction is our priority. If you are not 100% happy, we will come back and re-clean the area free of charge."
+    },
+    {
+      "number":"Six",
+      "question": "Are your cleaners insured, and background checked?",
+      "answer": "Absolutely. All our cleaners are fully insured and have current police clearances."
+    },
+    {
+      "number":"Seven",
+      "question": "Do you accept payments online?",
+      "answer": "We do not accept payments via the website."
+    },
+    {
+      "number":"Eight",
+      "question": "Do you offer regular cleaning plans?",
+      "answer": "Yes! We offer one-time, weekly, fortnightly, and monthly cleaning packages tailored to your needs."
+    }
+  ]
+  

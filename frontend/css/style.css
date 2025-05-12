@@ -9770,3 +9770,42 @@ textarea.form-control {
 .SCE_center{
   display: flex;
 }
+
+.SCE_faq{
+  width: 100%;
+  text-align: left;
+}
+
+.SCE_faq-header {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.SCE_accordion-button::before {
+  content: '+' !important;
+  font-size: 1.5rem;
+  transform: none !important;
+}
+.SCE_accordion-button:not(.collapsed)::before {
+  content: '-' !important;
+}
+.SCE_accordion-button:not(.collapsed) {
+  background-color: #3b82f6; /* Tailwind blue-500 */
+  color: white;
+}
+
+.accordion-collapse{
+  background-color: #efefef; /* Tailwind blue-500 */
+  color: black;
+}
+
+.SCE_accordion-header{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.SCE_faq-answer{
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: justify;
+}
