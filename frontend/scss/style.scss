@@ -1,7 +1,9 @@
 @import 'bootstrap/bootstrap';
 @import 'bootstrap/variables';
 
-$font-primary: 'Roboto',Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+$font-primary: 'Nunito','Roboto',Arial, sans-serif;
 
 $white: #fff;
 $black: #000000;
