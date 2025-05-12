@@ -7,9 +7,6 @@
  */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 :root {
-  --primary-color: #004953;
-  --secondary-color: #f5eaad;
-  --mid-night-green-light: #004953;
   --blue: #3ca200;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -10902,6 +10899,46 @@ textarea.form-control {
   display: flex;
 }
 
+<<<<<<< HEAD
+.SCE_faq{
+  width: 100%;
+  text-align: left;
+}
+
+.SCE_faq-header {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.SCE_accordion-button::before {
+  content: '+' !important;
+  font-size: 1.5rem;
+  transform: none !important;
+}
+.SCE_accordion-button:not(.collapsed)::before {
+  content: '-' !important;
+}
+.SCE_accordion-button:not(.collapsed) {
+  background-color: #3b82f6; /* Tailwind blue-500 */
+  color: white;
+}
+
+.accordion-collapse{
+  background-color: #efefef; /* Tailwind blue-500 */
+  color: black;
+}
+
+.SCE_accordion-header{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.SCE_faq-answer{
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: justify;
+}
+=======
 .sce-card {
   padding: 1rem;
   background-color: #e8f5d3;
@@ -10986,42 +11023,4 @@ textarea.form-control {
   position: absolute;
   border: 1px solid black;
 }
-
-.SCE_faq{
-  width: 100%;
-  text-align: left;
-}
-
-.SCE_faq-header {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.SCE_accordion-button::before {
-  content: '+' !important;
-  font-size: 1.5rem;
-  transform: none !important;
-}
-.SCE_accordion-button:not(.collapsed)::before {
-  content: '-' !important;
-}
-.SCE_accordion-button:not(.collapsed) {
-  background-color: #3b82f6; /* Tailwind blue-500 */
-  color: white;
-}
-
-.accordion-collapse{
-  background-color: #efefef; /* Tailwind blue-500 */
-  color: black;
-}
-
-.SCE_accordion-header{
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.SCE_faq-answer{
-  margin-left: 15px;
-  margin-right: 15px;
-  text-align: justify;
-}
+>>>>>>> 3d7845bfbf7129a83d8314e07120b9f042212c94
