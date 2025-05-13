@@ -101,7 +101,7 @@
             </li>
             <!-- <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li> -->
             <li class="nav-item">
-              <a href="pricing.html" class="nav-link">Services</a>
+              <a href="house-cleaning.html" class="nav-link">Services</a>
             </li>
             <!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
             <li class="nav-item">
@@ -247,6 +247,19 @@
                               name="email"
                               id="email"
                               placeholder="Email"
+							  required
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label class="label" for="subject">Phone Number</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="phonenumber"
+                              id="phonenumber"
+                              placeholder="Phone Number"
 							  required
                             />
                           </div>
@@ -458,7 +471,7 @@
 		btn.value = 'Sending...';
 
 		const serviceID = 'default_service';
-		const templateID = 'template_n7coiln';
+		const templateID = 'template_70ehv17';
 
 		emailjs.sendForm(serviceID, templateID, this)
 			.then(() => {
