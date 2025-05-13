@@ -25,6 +25,7 @@
   --gray-dark: #343a40;
   --primary: #3ca200;
   --primary-bg: #e8f5d3;
+  --primary-bg-light:#e8f5d3;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
@@ -10935,6 +10936,10 @@ textarea.form-control {
   color: white !important;
 }
 
+.sce-card.muted:hover {
+  border: 1px solid #e8f5d3;
+}
+
 .sce-card img {
   aspect-ratio: 1;
   width: 100%;
@@ -10969,22 +10974,42 @@ textarea.form-control {
 }
 
 .sce-timeline-container {
-  position: relative;
-  height: 400px;
+  height: 800px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .sce-timeline-container {
+    position: relative !important;
+  }
+  .sce-timeline-card {
+    position: absolute !important;
+  }
+  .sce-timeline-container {
+    display: block !important;
+  }
 }
 
 .sce-timeline-card {
-  box-shadow: rgba(60, 162, 0, 0.2) 0px 7px 29px 0px;
-  border-radius: 1rem;
-  width: min(100%, 250px);
-  height: 100px;
-  padding: 1rem;
+  display: flex;
+  position: unset;
+  gap: 1rem;
+}
+
+.sce-timeline-card-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  border: 1px solid black;
+  gap: 0.125rem;
+  max-width: 300px;
+  text-align: left;
+}
+
+.sce-timeline-card h3 {
+  color: var(--primary)
 }
 
 .SCE_faq{
@@ -11024,4 +11049,74 @@ textarea.form-control {
   margin-left: 15px;
   margin-right: 15px;
   text-align: justify;
+}
+
+.calculator {
+  background-color: #ffffff;
+  padding: 30px 35px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  height: 100%
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004ca3;
+}
+
+.result-card {
+  margin-top: 25px;
+  background-color: #f8f9fa;
+  border-left: 5px solid #28a745;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.result-card p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.form-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.calculator-result {
+  background-color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 30px);
+
+}
+
+.calculator-result .result {
+  min-height: 100px;
+}
+
+.bg-primary-light {
+  background-color: var(--primary-bg-light)
+}
+
+.feature-card * {
+}
+
+.feature-card img {
+  width: 100%;
+  border-top-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
 }
