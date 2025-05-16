@@ -9610,7 +9610,7 @@ h1, h2, h3, h4, h5,
 .time-open-wrap {
   border-radius: 5px;
   padding: 0;
-  background: #3ca200;
+  background: var(--primary-bg);
   overflow: hidden;
   -webkit-box-shadow: 0px 12px 48px -16px rgba(0, 0, 0, 0.29);
   -moz-box-shadow: 0px 12px 48px -16px rgba(0, 0, 0, 0.29);
@@ -9631,7 +9631,7 @@ h1, h2, h3, h4, h5,
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #eee89e;
+  color: var(--blue);
 }
 .time-open-wrap .desc .heading {
   font-size: 18px;
@@ -9647,16 +9647,15 @@ h1, h2, h3, h4, h5,
 .time-open-wrap .opening-hours h4 {
   font-size: 14px;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.8);
-  color: #eee89e;
+  color: var(--blue);
 }
 .time-open-wrap .opening-hours p span {
   display: block;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
 .time-open-wrap .opening-hours p span strong {
   font-weight: 400;
-  color: #fff;
+  color: #000;
 }
 
 .ftco-appointment {
@@ -10353,9 +10352,9 @@ textarea.form-control {
   position: relative;
   padding: 0 20px;
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
   border-radius: 5px;
-  background: #3ca200;
+  background: var(--primary-bg);
 }
 .testimony-wrap:after {
   position: absolute;
@@ -10395,11 +10394,11 @@ textarea.form-control {
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 0;
-  color: #fff;
+  color: #000;
 }
 .testimony-wrap .position {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .image-popup {

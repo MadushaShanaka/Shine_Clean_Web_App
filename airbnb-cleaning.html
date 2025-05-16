@@ -155,9 +155,9 @@
                 ><a href="services.html"
                   >Services <i class="fa fa-chevron-right"></i></a
               ></span>
-              <span>House Cleaning <i class="fa fa-chevron-right"></i></span>
+              <span>Airbnb Cleaning <i class="fa fa-chevron-right"></i></span>
             </p>
-            <h1 class="mb-0 bread">House Cleaning</h1>
+            <h1 class="mb-0 bread">Airbnb Cleaning</h1>
           </div>
         </div>
       </div>
@@ -221,8 +221,9 @@
                           id="cleaningType"
                           required
                         >
-                          <option value="standard">Standard</option>
-                          <option value="vacate">Vacate / Deep Cleaning</option>
+                          <option value="management">Full Management Service</option>
+                          <option value="clean">Full Cleaning Only</option>
+                          <option value="linen">Linen Replacement Only</option>
                         </select>
                       </div>
 
@@ -268,39 +269,10 @@
             <img src="images/custom/img-1.jpg" alt="House cleaning" />
           </div>
           <div class="col-lg-6 col-md-12">
-            <h1>Standard Cleaning</h1>
+            <h1>Airbnb Cleaning</h1>
             <p>
-              Our standard cleaning service is perfect for maintaining a clean
-              and comfortable home on a regular basis. Whether it’s weekly,
-              fortnightly, or monthly, this service keeps your living spaces
-              fresh and tidy without the stress. Ideal for busy households,
-              professionals, or anyone who wants more time for the things that
-              matter most. We follow a consistent process to ensure high-quality
-              results every visit. This service is customisable to suit your
-              preferences and lifestyle. Plus, enjoy exclusive discounts when
-              you book continuous services with us!
+              Our Airbnb cleaning service is designed to help hosts deliver a five-star guest experience every time. With us, you get more than just a clean space, you gain a professional partner who treats your property like their own. We show up on time, follow your instructions closely, and ensure your space is guest-ready for every check-in. Whether you are a solo host or manage multiple listings, our service is flexible, responsive, and tailored to your needs. Our goal is to help you maintain high guest ratings, positive reviews, and stress-free turnovers, so you can focus on growing your business.
             </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-section feature-card bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-12">
-            <h1>Vacate Cleaning (End of Lease Cleaning/Deep Cleaning)</h1>
-            <p>
-              Moving out? Let us handle the cleaning while you focus on the
-              move. Our vacate cleaning service is designed to meet the
-              expectations of landlords, property managers, and real estate
-              agents, helping you secure your bond refund with confidence. We
-              understand the high standards of end-of-lease cleaning and deliver
-              results you can trust.
-            </p>
-          </div>
-          <div class="col-lg-6 col-md-12">
-            <img src="images/custom/img-1.jpg" alt="House cleaning" />
           </div>
         </div>
       </div>
@@ -312,9 +284,10 @@
           <table id="taskTable" class="table table-bordered table-striped">
             <thead class="text-center">
               <tr>
-                <th>Cleaning Tasks (All Rooms)</th>
-                <th>Standard Cleaning</th>
-                <th>Deep Cleaning/Vacate Cleaning</th>
+                <th>Airbnb Tasks</th>
+                <th>Full Management Service</th>
+                <th>Full Cleaning Only</th>
+                <th>Linen Replacement Only</th>
               </tr>
             </thead>
             <tbody>
@@ -603,7 +576,7 @@
       const serviceID = 'default_service';
       const templateID = 'template_a9zkeiy';
 
-      document.getElementById("booking").value = "HOUSE Booking > Cleaning type : "+ document.getElementById("cleaningType").value +" No of bed rooms: " + document.getElementById("rooms").value + ", No of bathrooms: "+document.getElementById("bathrooms").value;
+      document.getElementById("booking").value = "AIRBNB Booking > Cleaning type : "+document.getElementById("cleaningType").value+" No of bed rooms: " + document.getElementById("rooms").value + ", No of bathrooms: "+document.getElementById("bathrooms").value;
 
       emailjs.sendForm(serviceID, templateID, this)
         .then(() => {
@@ -656,183 +629,267 @@
 
     <script>
       const data = [
-        {
-          rooms: 1,
-          bathrooms: 1,
-          standard: 101,
-          vacate: 374,
-          timeStandard: 2.25,
-          timeVacate: 7.2,
-        },
-        {
-          rooms: 2,
-          bathrooms: 1,
-          standard: 124,
-          vacate: 437,
-          timeStandard: 2.75,
-          timeVacate: 8.4,
-        },
-        {
-          rooms: 2,
-          bathrooms: 2,
-          standard: 158,
-          vacate: 541,
-          timeStandard: 3.5,
-          timeVacate: 10.4,
-        },
-        {
-          rooms: 3,
-          bathrooms: 1,
-          standard: 146,
-          vacate: 499,
-          timeStandard: 3.25,
-          timeVacate: 9.6,
-        },
-        {
-          rooms: 3,
-          bathrooms: 2,
-          standard: 180,
-          vacate: 603,
-          timeStandard: 4,
-          timeVacate: 11.6,
-        },
-        {
-          rooms: 3,
-          bathrooms: 3,
-          standard: 214,
-          vacate: 707,
-          timeStandard: 4.75,
-          timeVacate: 13.6,
-        },
-        {
-          rooms: 4,
-          bathrooms: 1,
-          standard: 169,
-          vacate: 562,
-          timeStandard: 3.75,
-          timeVacate: 10.8,
-        },
-        {
-          rooms: 4,
-          bathrooms: 2,
-          standard: 203,
-          vacate: 666,
-          timeStandard: 4.5,
-          timeVacate: 12.8,
-        },
-        {
-          rooms: 4,
-          bathrooms: 3,
-          standard: 236,
-          vacate: 770,
-          timeStandard: 5.25,
-          timeVacate: 14.8,
-        },
-        {
-          rooms: 4,
-          bathrooms: 4,
-          standard: 270,
-          vacate: 874,
-          timeStandard: 6,
-          timeVacate: 16.8,
-        },
-        {
-          rooms: 5,
-          bathrooms: 1,
-          standard: 191,
-          vacate: 624,
-          timeStandard: 4.25,
-          timeVacate: 12,
-        },
-        {
-          rooms: 5,
-          bathrooms: 2,
-          standard: 225,
-          vacate: 728,
-          timeStandard: 5,
-          timeVacate: 14,
-        },
-        {
-          rooms: 5,
-          bathrooms: 3,
-          standard: 259,
-          vacate: 832,
-          timeStandard: 5.75,
-          timeVacate: 16,
-        },
-        {
-          rooms: 5,
-          bathrooms: 4,
-          standard: 293,
-          vacate: 936,
-          timeStandard: 6.5,
-          timeVacate: 18,
-        },
-        {
-          rooms: 6,
-          bathrooms: 1,
-          standard: 214,
-          vacate: 686,
-          timeStandard: 4.75,
-          timeVacate: 13.2,
-        },
-        {
-          rooms: 6,
-          bathrooms: 2,
-          standard: 248,
-          vacate: 790,
-          timeStandard: 5.5,
-          timeVacate: 15.2,
-        },
-        {
-          rooms: 6,
-          bathrooms: 3,
-          standard: 281,
-          vacate: 894,
-          timeStandard: 6.25,
-          timeVacate: 17.2,
-        },
-        {
-          rooms: 6,
-          bathrooms: 4,
-          standard: 315,
-          vacate: 998,
-          timeStandard: 7,
-          timeVacate: 19.2,
-        },
-        {
-          rooms: 7,
-          bathrooms: 1,
-          standard: 236,
-          vacate: 749,
-          timeStandard: 5.25,
-          timeVacate: 14.4,
-        },
-        {
-          rooms: 7,
-          bathrooms: 2,
-          standard: 270,
-          vacate: 853,
-          timeStandard: 6,
-          timeVacate: 16.4,
-        },
-        {
-          rooms: 7,
-          bathrooms: 3,
-          standard: 304,
-          vacate: 957,
-          timeStandard: 6.75,
-          timeVacate: 18.4,
-        },
-        {
-          rooms: 7,
-          bathrooms: 4,
-          standard: 338,
-          vacate: 1061,
-          timeStandard: 7.5,
-          timeVacate: 20.4,
-        },
-      ];
+   {
+      rooms:1,
+      bathrooms:1,
+      management:98,
+      clean:78,
+      linen:25,
+      timeManagement:1.95,
+      timeClean:1.6,
+      timeLinen:0.5
+   },
+   {
+      rooms:2,
+      bathrooms:1,
+      management:152,
+      clean:112,
+      linen:50,
+      timeManagement:2.55,
+      timeClean:2.1,
+      timeLinen:1
+   },
+   {
+      rooms:2,
+      bathrooms:2,
+      management:186,
+      clean:146,
+      linen:50,
+      timeManagement:3.40,
+      timeClean:2.7,
+      timeLinen:1
+   },
+   {
+      rooms:3,
+      bathrooms:1,
+      management:206,
+      clean:146,
+      linen:75,
+      timeManagement:3.15,
+      timeClean:2.6,
+      timeLinen:1.5
+   },
+   {
+      rooms:3,
+      bathrooms:2,
+      management:240,
+      clean:180,
+      linen:75,
+      timeManagement:4.00,
+      timeClean:3.2,
+      timeLinen:1.5
+   },
+   {
+      rooms:3,
+      bathrooms:3,
+      management:274,
+      clean:214,
+      linen:75,
+      timeManagement:4.85,
+      timeClean:3.8,
+      timeLinen:1.5
+   },
+   {
+      rooms:4,
+      bathrooms:1,
+      management:260,
+      clean:180,
+      linen:100,
+      timeManagement:3.75,
+      timeClean:3.1,
+      timeLinen:2
+   },
+   {
+      rooms:4,
+      bathrooms:2,
+      management:294,
+      clean:214,
+      linen:100,
+      timeManagement:4.60,
+      timeClean:3.7,
+      timeLinen:2
+   },
+   {
+      rooms:4,
+      bathrooms:3,
+      management:328,
+      clean:248,
+      linen:100,
+      timeManagement:5.45,
+      timeClean:4.3,
+      timeLinen:2
+   },
+   {
+      rooms:4,
+      bathrooms:4,
+      management:362,
+      clean:282,
+      linen:100,
+      timeManagement:6.30,
+      timeClean:4.9,
+      timeLinen:2
+   },
+   {
+      rooms:5,
+      bathrooms:1,
+      management:314,
+      clean:214,
+      linen:125,
+      timeManagement:4.35,
+      timeClean:3.6,
+      timeLinen:2.5
+   },
+   {
+      rooms:5,
+      bathrooms:2,
+      management:348,
+      clean:248,
+      linen:125,
+      timeManagement:5.20,
+      timeClean:4.2,
+      timeLinen:2.5
+   },
+   {
+      rooms:5,
+      bathrooms:3,
+      management:382,
+      clean:282,
+      linen:125,
+      timeManagement:6.05,
+      timeClean:4.8,
+      timeLinen:2.5
+   },
+   {
+      rooms:5,
+      bathrooms:4,
+      management:416,
+      clean:316,
+      linen:125,
+      timeManagement:6.90,
+      timeClean:5.4,
+      timeLinen:2.5
+   },
+   {
+      rooms:5,
+      bathrooms:5,
+      management:450,
+      clean:350,
+      linen:125,
+      timeManagement:7.75,
+      timeClean:6,
+      timeLinen:2.5
+   },
+   {
+      rooms:6,
+      bathrooms:1,
+      management:368,
+      clean:248,
+      linen:150,
+      timeManagement:4.95,
+      timeClean:4.1,
+      timeLinen:3
+   },
+   {
+      rooms:6,
+      bathrooms:2,
+      management:402,
+      clean:282,
+      linen:150,
+      timeManagement:5.80,
+      timeClean:4.7,
+      timeLinen:3
+   },
+   {
+      rooms:6,
+      bathrooms:3,
+      management:436,
+      clean:316,
+      linen:150,
+      timeManagement:6.65,
+      timeClean:5.3,
+      timeLinen:3
+   },
+   {
+      rooms:6,
+      bathrooms:4,
+      management:470,
+      clean:350,
+      linen:150,
+      timeManagement:7.50,
+      timeClean:5.9,
+      timeLinen:3
+   },
+   {
+      rooms:6,
+      bathrooms:5,
+      management:504,
+      clean:384,
+      linen:150,
+      timeManagement:8.35,
+      timeClean:6.5,
+      timeLinen:3
+   },
+   {
+      rooms:7,
+      bathrooms:1,
+      management:422,
+      clean:282,
+      linen:175,
+      timeManagement:5.55,
+      timeClean:4.6,
+      timeLinen:3.5
+   },
+   {
+      rooms:7,
+      bathrooms:2,
+      management:456,
+      clean:316,
+      linen:175,
+      timeManagement:6.40,
+      timeClean:5.2,
+      timeLinen:3.5
+   },
+   {
+      rooms:7,
+      bathrooms:3,
+      management:490,
+      clean:350,
+      linen:175,
+      timeManagement:7.25,
+      timeClean:5.8,
+      timeLinen:3.5
+   },
+   {
+      rooms:7,
+      bathrooms:4,
+      management:524,
+      clean:384,
+      linen:175,
+      timeManagement:8.10,
+      timeClean:6.4,
+      timeLinen:3.5
+   },
+   {
+      rooms:7,
+      bathrooms:5,
+      management:558,
+      clean:418,
+      linen:175,
+      timeManagement:8.95,
+      timeClean:7,
+      timeLinen:3.5
+   },
+   {
+      rooms:7,
+      bathrooms:6,
+      management:592,
+      clean:452,
+      linen:175,
+      timeManagement:9.80,
+      timeClean:7.6,
+      timeLinen:3.5
+   },
+];
 
       const roomsSelect = document.getElementById("rooms");
       const bathroomsSelect = document.getElementById("bathrooms");
@@ -892,10 +949,19 @@
             return;
           }
 
-          const price =
-            cleaningType === "standard" ? match.standard : match.vacate;
-          const time =
-            cleaningType === "standard" ? match.timeStandard : match.timeVacate;
+          var price = null;
+          var time = null;
+
+          if (cleaningType === "management") {
+            price = match.management;
+            time = match.timeManagement;
+          } else if(cleaningType==="clean") {
+            price = match.clean;
+            time = match.timeClean;
+          } else {
+            price = match.linen;
+            time = match.timeLinen;
+          }
 
           calcResultHeading.innerText = "Your result is ready!";
           calcPrice.innerText = `Estimated Cost: $${price}`;
@@ -907,26 +973,18 @@
 
     <script>
   const cleaningTasks = [
-    { task: "Dust surfaces (tables, shelves, benchtops)", standard: true, vacate: true },
-    { task: "Vacuum carpets and floors", standard: true, vacate: true },
-    { task: "Mop hard floors (tiles, wood, laminate)", standard: true, vacate: true },
-    { task: "Dust light switches, power points, door handles", standard: true, vacate: true },
-    { task: "General tidy-up of rooms", standard: true, vacate: true },
-    { task: "Wipe outside of kitchen appliances (fridge, microwave)", standard: true, vacate: true },
-    { task: "Clean kitchen benchtops and splashback", standard: true, vacate: true },
-    { task: "Clean bathroom vanity, mirror, toilet, shower screen", standard: true, vacate: true },
-    { task: "Empty bins and replace liners", standard: true, vacate: true },
-    { task: "Full wall spot cleaning (large marks)", standard: false, vacate: true },
-    { task: "Clean inside oven and rangehood", standard: false, vacate: true },
-    { task: "Clean inside kitchen cupboards and drawers", standard: false, vacate: true },
-    { task: "Clean inside fridge (if empty)", standard: false, vacate: true },
-    { task: "Full skirting board wash", standard: false, vacate: true },
-    { task: "Clean windows and window tracks", standard: false, vacate: true },
-    { task: "Dust ceiling fans and vents", standard: false, vacate: true },
-    { task: "Remove cobwebs from ceilings and corners", standard: false, vacate: true },
-    { task: "Clean blinds (dust or wipe depending on material)", standard: false, vacate: true },
-    { task: "Deep clean showers (grout scrubbing, mould removal)", standard: false, vacate: true },
-    { task: "Clean laundry sinks, taps, and benches", standard: false, vacate: true },
+    { task: "Full property clean (all rooms, kitchen, bathroom)", management: true, clean: true, linen: false },
+    { task: "Dusting, vacuuming, mopping", management: true, clean: true, linen: false },
+    { task: "Change bed linens and make beds", management: true, clean: true, linen: true },
+    { task: "Replace towels and restock bathroom essentials", management: true, clean: true, linen: true },
+    { task: "Take out rubbish and replace liners", management: true, clean: true, linen: false },
+    { task: "Laundry service (washing, drying linen/towels)", management: true, clean: false, linen: true },
+    { task: "Refill kitchen supplies (tea, coffee, sugar, etc.)", management: true, clean: false, linen: false },
+    { task: "Guest check-in/check-out coordination", management: true, clean: false, linen: false },
+    { task: "Report property damages to owner", management: true, clean: true, linen: false },
+    { task: "Manage guest communication (before, during stay)", management: true, clean: false, linen: false },
+    { task: "Restock toilet paper, soaps, amenities", management: true, clean: true, linen: false },
+    { task: "Emergency support (lost key, late check-in)", management: true, clean: false, linen: false },
   ];
 
   const tbody = document.querySelector("#taskTable tbody");
@@ -937,21 +995,28 @@
     const taskCell = document.createElement("td");
     taskCell.textContent = item.task;
 
-    const standardCell = document.createElement("td");
-    standardCell.className = "text-center";
-    standardCell.innerHTML = item.standard
+    const managementCell = document.createElement("td");
+    managementCell.className = "text-center";
+    managementCell.innerHTML = item.management
       ? '<span class="checkmark">✔</span>'
       : '<span class="crossmark">✘</span>';
 
-    const vacateCell = document.createElement("td");
-    vacateCell.className = "text-center";
-    vacateCell.innerHTML = item.vacate
+    const cleanCell = document.createElement("td");
+    cleanCell.className = "text-center";
+    cleanCell.innerHTML = item.clean
+      ? '<span class="checkmark">✔</span>'
+      : '<span class="crossmark">✘</span>';
+
+    const linenCell = document.createElement("td");
+    linenCell.className = "text-center";
+    linenCell.innerHTML = item.linen
       ? '<span class="checkmark">✔</span>'
       : '<span class="crossmark">✘</span>';
 
     row.appendChild(taskCell);
-    row.appendChild(standardCell);
-    row.appendChild(vacateCell);
+    row.appendChild(managementCell);
+    row.appendChild(cleanCell);
+    row.appendChild(linenCell);
 
     tbody.appendChild(row);
   });
