@@ -32,31 +32,32 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <style>
-    .checkmark {
-      color: var(--primary);
-      font-size: 1.2em;
-    }
-    .crossmark {
-      color: var(--secondary);
-      font-size: 1.2em;
-    }
-    th, td {
-      vertical-align: middle !important;
-    }
-    .table thead th {
-      background-color: #f8f9fa;
-    }
-    .table-responsive {
-      background-color: white;
-    }
-  </style>
+      .checkmark {
+        color: var(--primary);
+        font-size: 1.2em;
+      }
+      .crossmark {
+        color: var(--secondary);
+        font-size: 1.2em;
+      }
+      th,
+      td {
+        vertical-align: middle !important;
+      }
+      .table thead th {
+        background-color: #f8f9fa;
+      }
+      .table-responsive {
+        background-color: white;
+      }
+    </style>
   </head>
   <body>
     <div class="wrap">
       <div class="container">
         <div class="row justify-content-between">
           <div class="col-12 col-md d-flex align-items-center">
-            <p class="mb-0 phone" style="display: none;">
+            <p class="mb-0 phone" style="display: none">
               <span class="mailus">Business Reg No:</span>
               <a href="#">00 1234 567</a>
             </p>
@@ -207,6 +208,7 @@
                           >Booking Date</label
                         >
                         <input
+                          id="bookingDate"
                           class="form-control"
                           type="text"
                           name="bookingDate"
@@ -221,7 +223,9 @@
                           id="cleaningType"
                           required
                         >
-                          <option value="management">Full Management Service</option>
+                          <option value="management">
+                            Full Management Service
+                          </option>
                           <option value="clean">Full Cleaning Only</option>
                           <option value="linen">Linen Replacement Only</option>
                         </select>
@@ -271,7 +275,16 @@
           <div class="col-lg-6 col-md-12">
             <h1>Airbnb Cleaning</h1>
             <p>
-              Our Airbnb cleaning service is designed to help hosts deliver a five-star guest experience every time. With us, you get more than just a clean space, you gain a professional partner who treats your property like their own. We show up on time, follow your instructions closely, and ensure your space is guest-ready for every check-in. Whether you are a solo host or manage multiple listings, our service is flexible, responsive, and tailored to your needs. Our goal is to help you maintain high guest ratings, positive reviews, and stress-free turnovers, so you can focus on growing your business.
+              Our Airbnb cleaning service is designed to help hosts deliver a
+              five-star guest experience every time. With us, you get more than
+              just a clean space, you gain a professional partner who treats
+              your property like their own. We show up on time, follow your
+              instructions closely, and ensure your space is guest-ready for
+              every check-in. Whether you are a solo host or manage multiple
+              listings, our service is flexible, responsive, and tailored to
+              your needs. Our goal is to help you maintain high guest ratings,
+              positive reviews, and stress-free turnovers, so you can focus on
+              growing your business.
             </p>
           </div>
         </div>
@@ -290,9 +303,7 @@
                 <th>Linen Replacement Only</th>
               </tr>
             </thead>
-            <tbody>
-             
-            </tbody>
+            <tbody></tbody>
           </table>
         </div>
       </div>
@@ -307,11 +318,30 @@
                 <div class="col-md-12">
                   <div class="contact-wrap w-100 p-md-5 p-4">
                     <h3 class="mb-4">House Cleaning Service Enquiry</h3>
-                    <div id="failedMessage" style="display: none; color: #ff0000; padding: 10px; margin-top: 10px;">
-                    Enquiry sending failed, Please try again later!
+                    <div
+                      id="failedMessage"
+                      style="
+                        display: none;
+                        color: #ff0000;
+                        padding: 10px;
+                        margin-top: 10px;
+                      "
+                    >
+                      Enquiry sending failed, Please try again later!
                     </div>
-                    <div id="successMessage" style="display: none; color: #155724; padding: 10px; margin-top: 10px;">
+                    <div
+                      id="successMessage"
+                      style="
+                        display: none;
+                        color: #155724;
+                        padding: 10px;
+                        margin-top: 10px;
+                      "
+                    >
                       Your enquiry was sent, Thank you!
+                    </div>
+                    <div>
+                      <p id="bkgMsgDisplay"></p>
                     </div>
                     <form
                       method="POST"
@@ -329,7 +359,7 @@
                               name="name"
                               id="name"
                               placeholder="Name"
-							  required
+                              required
                             />
                           </div>
                         </div>
@@ -344,24 +374,26 @@
                               name="email"
                               id="email"
                               placeholder="Email"
-							  required
+                              required
                             />
                           </div>
                         </div>
                         <div class="col-md-12">
                           <div class="form-group">
-                            <label class="label" for="subject">Phone Number</label>
+                            <label class="label" for="subject"
+                              >Phone Number</label
+                            >
                             <input
                               type="text"
                               class="form-control"
                               name="phonenumber"
                               id="phonenumber"
                               placeholder="Phone Number"
-							  required
+                              required
                             />
                           </div>
                         </div>
-                        <div class="col-md-12" style="display: none;">
+                        <div class="col-md-12" style="display: none">
                           <div class="form-group">
                             <label class="label" for="booking">Booking</label>
                             <input
@@ -383,14 +415,14 @@
                               cols="30"
                               rows="4"
                               placeholder="Address"
-							  required
+                              required
                             ></textarea>
                           </div>
                         </div>
                         <div class="col-md-12">
                           <div class="form-group">
                             <input
-							                id="sendEmailBtn"
+                              id="sendEmailBtn"
                               type="submit"
                               value="Book Now"
                               class="btn btn-primary"
@@ -415,7 +447,7 @@
           <div class="row">
             <div class="col-12 col-md-12 col-lg-6 mb-4 mb-md-0">
               <h2 class="footer-heading">Shine Cleaning Experts</h2>
-              <p style="text-align: justify;">
+              <p style="text-align: justify">
                 At Shine Cleaning Expert, we are committed to delivering
                 spotless results with a shine you can trust. Based in Western
                 Australia, we offer residential, commercial, and specialist
@@ -491,7 +523,9 @@
                   <li>
                     <a href="mailto:info@shinecleaningexperts.com.au"
                       ><span class="icon fa fa-paper-plane"></span
-                      ><span class="text">info@shinecleaning<wbr>experts.com.auUs</span></a
+                      ><span class="text"
+                        >info@shinecleaning<wbr />experts.com.auUs</span
+                      ></a
                     >
                   </li>
                 </ul>
@@ -570,44 +604,71 @@
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
       function scrollToSection() {
-        document.getElementById("submitRequest").scrollIntoView({ behavior: "smooth" });
+        document
+          .getElementById("submitRequest")
+          .scrollIntoView({ behavior: "smooth" });
+
+        var cleaningType = document.getElementById("cleaningType").value;
+        if (cleaningType === "management") {
+          cleaningType = "Full management service";
+        } else if (cleaningType === "clean") {
+          cleaningType = "Full Cleaning Only";
+        } else {
+          cleaningType = "Linen Replacement Only";
+        }
+        const noOfRooms = document.getElementById("rooms").value;
+        const noOfBaths = document.getElementById("bathrooms").value;
+        const bkgDate = document.getElementById("bookingDate").value;
+        const bkgMsg =
+          "Need " +
+          cleaningType +
+          " for my Airbnb which has " +
+          noOfRooms +
+          " rooms and " +
+          noOfBaths +
+          " bathrooms on " +
+          bkgDate;
+        document.getElementById("booking").value = bkgMsg;
+        document.getElementById("bkgMsgDisplay").innerText = bkgMsg;
       }
     </script>
     <script>
-      (function(){
+      (function () {
         emailjs.init("WuS5qBwJYLtBYmCN4");
       })();
     </script>
     <script>
-      const btn = document.getElementById('sendEmailBtn');
+      const btn = document.getElementById("sendEmailBtn");
 
-      document.getElementById('contactForm')
-      .addEventListener('submit', function(event) {
-      event.preventDefault();
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
 
-      btn.value = 'Sending...';
+          btn.value = "Sending...";
 
-      const serviceID = 'default_service';
-      const templateID = 'template_a9zkeiy';
+          const serviceID = "default_service";
+          const templateID = "template_a9zkeiy";
 
-      document.getElementById("booking").value = "AIRBNB Booking > Cleaning type : "+document.getElementById("cleaningType").value+" No of bed rooms: " + document.getElementById("rooms").value + ", No of bathrooms: "+document.getElementById("bathrooms").value;
-
-      emailjs.sendForm(serviceID, templateID, this)
-        .then(() => {
-        btn.value = 'Send Email';
-        document.getElementById("successMessage").style.display = "block";
-        document.getElementById("contactForm").reset();
-        setTimeout(() => {
-            document.getElementById("successMessage").style.display = "none";
-        }, 5000);	
-        }, (err) => {
-        btn.value = 'Send Email';
-        document.getElementById("failedMessage").style.display = "block";
-        setTimeout(() => {
-            document.getElementById("failedMessage").style.display = "none";
-        }, 5000);	
+          emailjs.sendForm(serviceID, templateID, this).then(
+            () => {
+              btn.value = "Send Email";
+              document.getElementById("successMessage").style.display = "block";
+              document.getElementById("contactForm").reset();
+              setTimeout(() => {
+                document.getElementById("successMessage").style.display =
+                  "none";
+              }, 5000);
+            },
+            (err) => {
+              btn.value = "Send Email";
+              document.getElementById("failedMessage").style.display = "block";
+              setTimeout(() => {
+                document.getElementById("failedMessage").style.display = "none";
+              }, 5000);
+            }
+          );
         });
-      });
     </script>
     <script
       type="text/javascript"
@@ -643,267 +704,267 @@
 
     <script>
       const data = [
-   {
-      rooms:1,
-      bathrooms:1,
-      management:98,
-      clean:78,
-      linen:25,
-      timeManagement:1.95,
-      timeClean:1.6,
-      timeLinen:0.5
-   },
-   {
-      rooms:2,
-      bathrooms:1,
-      management:152,
-      clean:112,
-      linen:50,
-      timeManagement:2.55,
-      timeClean:2.1,
-      timeLinen:1
-   },
-   {
-      rooms:2,
-      bathrooms:2,
-      management:186,
-      clean:146,
-      linen:50,
-      timeManagement:3.40,
-      timeClean:2.7,
-      timeLinen:1
-   },
-   {
-      rooms:3,
-      bathrooms:1,
-      management:206,
-      clean:146,
-      linen:75,
-      timeManagement:3.15,
-      timeClean:2.6,
-      timeLinen:1.5
-   },
-   {
-      rooms:3,
-      bathrooms:2,
-      management:240,
-      clean:180,
-      linen:75,
-      timeManagement:4.00,
-      timeClean:3.2,
-      timeLinen:1.5
-   },
-   {
-      rooms:3,
-      bathrooms:3,
-      management:274,
-      clean:214,
-      linen:75,
-      timeManagement:4.85,
-      timeClean:3.8,
-      timeLinen:1.5
-   },
-   {
-      rooms:4,
-      bathrooms:1,
-      management:260,
-      clean:180,
-      linen:100,
-      timeManagement:3.75,
-      timeClean:3.1,
-      timeLinen:2
-   },
-   {
-      rooms:4,
-      bathrooms:2,
-      management:294,
-      clean:214,
-      linen:100,
-      timeManagement:4.60,
-      timeClean:3.7,
-      timeLinen:2
-   },
-   {
-      rooms:4,
-      bathrooms:3,
-      management:328,
-      clean:248,
-      linen:100,
-      timeManagement:5.45,
-      timeClean:4.3,
-      timeLinen:2
-   },
-   {
-      rooms:4,
-      bathrooms:4,
-      management:362,
-      clean:282,
-      linen:100,
-      timeManagement:6.30,
-      timeClean:4.9,
-      timeLinen:2
-   },
-   {
-      rooms:5,
-      bathrooms:1,
-      management:314,
-      clean:214,
-      linen:125,
-      timeManagement:4.35,
-      timeClean:3.6,
-      timeLinen:2.5
-   },
-   {
-      rooms:5,
-      bathrooms:2,
-      management:348,
-      clean:248,
-      linen:125,
-      timeManagement:5.20,
-      timeClean:4.2,
-      timeLinen:2.5
-   },
-   {
-      rooms:5,
-      bathrooms:3,
-      management:382,
-      clean:282,
-      linen:125,
-      timeManagement:6.05,
-      timeClean:4.8,
-      timeLinen:2.5
-   },
-   {
-      rooms:5,
-      bathrooms:4,
-      management:416,
-      clean:316,
-      linen:125,
-      timeManagement:6.90,
-      timeClean:5.4,
-      timeLinen:2.5
-   },
-   {
-      rooms:5,
-      bathrooms:5,
-      management:450,
-      clean:350,
-      linen:125,
-      timeManagement:7.75,
-      timeClean:6,
-      timeLinen:2.5
-   },
-   {
-      rooms:6,
-      bathrooms:1,
-      management:368,
-      clean:248,
-      linen:150,
-      timeManagement:4.95,
-      timeClean:4.1,
-      timeLinen:3
-   },
-   {
-      rooms:6,
-      bathrooms:2,
-      management:402,
-      clean:282,
-      linen:150,
-      timeManagement:5.80,
-      timeClean:4.7,
-      timeLinen:3
-   },
-   {
-      rooms:6,
-      bathrooms:3,
-      management:436,
-      clean:316,
-      linen:150,
-      timeManagement:6.65,
-      timeClean:5.3,
-      timeLinen:3
-   },
-   {
-      rooms:6,
-      bathrooms:4,
-      management:470,
-      clean:350,
-      linen:150,
-      timeManagement:7.50,
-      timeClean:5.9,
-      timeLinen:3
-   },
-   {
-      rooms:6,
-      bathrooms:5,
-      management:504,
-      clean:384,
-      linen:150,
-      timeManagement:8.35,
-      timeClean:6.5,
-      timeLinen:3
-   },
-   {
-      rooms:7,
-      bathrooms:1,
-      management:422,
-      clean:282,
-      linen:175,
-      timeManagement:5.55,
-      timeClean:4.6,
-      timeLinen:3.5
-   },
-   {
-      rooms:7,
-      bathrooms:2,
-      management:456,
-      clean:316,
-      linen:175,
-      timeManagement:6.40,
-      timeClean:5.2,
-      timeLinen:3.5
-   },
-   {
-      rooms:7,
-      bathrooms:3,
-      management:490,
-      clean:350,
-      linen:175,
-      timeManagement:7.25,
-      timeClean:5.8,
-      timeLinen:3.5
-   },
-   {
-      rooms:7,
-      bathrooms:4,
-      management:524,
-      clean:384,
-      linen:175,
-      timeManagement:8.10,
-      timeClean:6.4,
-      timeLinen:3.5
-   },
-   {
-      rooms:7,
-      bathrooms:5,
-      management:558,
-      clean:418,
-      linen:175,
-      timeManagement:8.95,
-      timeClean:7,
-      timeLinen:3.5
-   },
-   {
-      rooms:7,
-      bathrooms:6,
-      management:592,
-      clean:452,
-      linen:175,
-      timeManagement:9.80,
-      timeClean:7.6,
-      timeLinen:3.5
-   },
-];
+        {
+          rooms: 1,
+          bathrooms: 1,
+          management: 98,
+          clean: 78,
+          linen: 25,
+          timeManagement: 1.95,
+          timeClean: 1.6,
+          timeLinen: 0.5,
+        },
+        {
+          rooms: 2,
+          bathrooms: 1,
+          management: 152,
+          clean: 112,
+          linen: 50,
+          timeManagement: 2.55,
+          timeClean: 2.1,
+          timeLinen: 1,
+        },
+        {
+          rooms: 2,
+          bathrooms: 2,
+          management: 186,
+          clean: 146,
+          linen: 50,
+          timeManagement: 3.4,
+          timeClean: 2.7,
+          timeLinen: 1,
+        },
+        {
+          rooms: 3,
+          bathrooms: 1,
+          management: 206,
+          clean: 146,
+          linen: 75,
+          timeManagement: 3.15,
+          timeClean: 2.6,
+          timeLinen: 1.5,
+        },
+        {
+          rooms: 3,
+          bathrooms: 2,
+          management: 240,
+          clean: 180,
+          linen: 75,
+          timeManagement: 4.0,
+          timeClean: 3.2,
+          timeLinen: 1.5,
+        },
+        {
+          rooms: 3,
+          bathrooms: 3,
+          management: 274,
+          clean: 214,
+          linen: 75,
+          timeManagement: 4.85,
+          timeClean: 3.8,
+          timeLinen: 1.5,
+        },
+        {
+          rooms: 4,
+          bathrooms: 1,
+          management: 260,
+          clean: 180,
+          linen: 100,
+          timeManagement: 3.75,
+          timeClean: 3.1,
+          timeLinen: 2,
+        },
+        {
+          rooms: 4,
+          bathrooms: 2,
+          management: 294,
+          clean: 214,
+          linen: 100,
+          timeManagement: 4.6,
+          timeClean: 3.7,
+          timeLinen: 2,
+        },
+        {
+          rooms: 4,
+          bathrooms: 3,
+          management: 328,
+          clean: 248,
+          linen: 100,
+          timeManagement: 5.45,
+          timeClean: 4.3,
+          timeLinen: 2,
+        },
+        {
+          rooms: 4,
+          bathrooms: 4,
+          management: 362,
+          clean: 282,
+          linen: 100,
+          timeManagement: 6.3,
+          timeClean: 4.9,
+          timeLinen: 2,
+        },
+        {
+          rooms: 5,
+          bathrooms: 1,
+          management: 314,
+          clean: 214,
+          linen: 125,
+          timeManagement: 4.35,
+          timeClean: 3.6,
+          timeLinen: 2.5,
+        },
+        {
+          rooms: 5,
+          bathrooms: 2,
+          management: 348,
+          clean: 248,
+          linen: 125,
+          timeManagement: 5.2,
+          timeClean: 4.2,
+          timeLinen: 2.5,
+        },
+        {
+          rooms: 5,
+          bathrooms: 3,
+          management: 382,
+          clean: 282,
+          linen: 125,
+          timeManagement: 6.05,
+          timeClean: 4.8,
+          timeLinen: 2.5,
+        },
+        {
+          rooms: 5,
+          bathrooms: 4,
+          management: 416,
+          clean: 316,
+          linen: 125,
+          timeManagement: 6.9,
+          timeClean: 5.4,
+          timeLinen: 2.5,
+        },
+        {
+          rooms: 5,
+          bathrooms: 5,
+          management: 450,
+          clean: 350,
+          linen: 125,
+          timeManagement: 7.75,
+          timeClean: 6,
+          timeLinen: 2.5,
+        },
+        {
+          rooms: 6,
+          bathrooms: 1,
+          management: 368,
+          clean: 248,
+          linen: 150,
+          timeManagement: 4.95,
+          timeClean: 4.1,
+          timeLinen: 3,
+        },
+        {
+          rooms: 6,
+          bathrooms: 2,
+          management: 402,
+          clean: 282,
+          linen: 150,
+          timeManagement: 5.8,
+          timeClean: 4.7,
+          timeLinen: 3,
+        },
+        {
+          rooms: 6,
+          bathrooms: 3,
+          management: 436,
+          clean: 316,
+          linen: 150,
+          timeManagement: 6.65,
+          timeClean: 5.3,
+          timeLinen: 3,
+        },
+        {
+          rooms: 6,
+          bathrooms: 4,
+          management: 470,
+          clean: 350,
+          linen: 150,
+          timeManagement: 7.5,
+          timeClean: 5.9,
+          timeLinen: 3,
+        },
+        {
+          rooms: 6,
+          bathrooms: 5,
+          management: 504,
+          clean: 384,
+          linen: 150,
+          timeManagement: 8.35,
+          timeClean: 6.5,
+          timeLinen: 3,
+        },
+        {
+          rooms: 7,
+          bathrooms: 1,
+          management: 422,
+          clean: 282,
+          linen: 175,
+          timeManagement: 5.55,
+          timeClean: 4.6,
+          timeLinen: 3.5,
+        },
+        {
+          rooms: 7,
+          bathrooms: 2,
+          management: 456,
+          clean: 316,
+          linen: 175,
+          timeManagement: 6.4,
+          timeClean: 5.2,
+          timeLinen: 3.5,
+        },
+        {
+          rooms: 7,
+          bathrooms: 3,
+          management: 490,
+          clean: 350,
+          linen: 175,
+          timeManagement: 7.25,
+          timeClean: 5.8,
+          timeLinen: 3.5,
+        },
+        {
+          rooms: 7,
+          bathrooms: 4,
+          management: 524,
+          clean: 384,
+          linen: 175,
+          timeManagement: 8.1,
+          timeClean: 6.4,
+          timeLinen: 3.5,
+        },
+        {
+          rooms: 7,
+          bathrooms: 5,
+          management: 558,
+          clean: 418,
+          linen: 175,
+          timeManagement: 8.95,
+          timeClean: 7,
+          timeLinen: 3.5,
+        },
+        {
+          rooms: 7,
+          bathrooms: 6,
+          management: 592,
+          clean: 452,
+          linen: 175,
+          timeManagement: 9.8,
+          timeClean: 7.6,
+          timeLinen: 3.5,
+        },
+      ];
 
       const roomsSelect = document.getElementById("rooms");
       const bathroomsSelect = document.getElementById("bathrooms");
@@ -969,7 +1030,7 @@
           if (cleaningType === "management") {
             price = match.management;
             time = match.timeManagement;
-          } else if(cleaningType==="clean") {
+          } else if (cleaningType === "clean") {
             price = match.clean;
             time = match.timeClean;
           } else {
@@ -986,54 +1047,114 @@
     </script>
 
     <script>
-  const cleaningTasks = [
-    { task: "Full property clean (all rooms, kitchen, bathroom)", management: true, clean: true, linen: false },
-    { task: "Dusting, vacuuming, mopping", management: true, clean: true, linen: false },
-    { task: "Change bed linens and make beds", management: true, clean: true, linen: true },
-    { task: "Replace towels and restock bathroom essentials", management: true, clean: true, linen: true },
-    { task: "Take out rubbish and replace liners", management: true, clean: true, linen: false },
-    { task: "Laundry service (washing, drying linen/towels)", management: true, clean: false, linen: true },
-    { task: "Refill kitchen supplies (tea, coffee, sugar, etc.)", management: true, clean: false, linen: false },
-    { task: "Guest check-in/check-out coordination", management: true, clean: false, linen: false },
-    { task: "Report property damages to owner", management: true, clean: true, linen: false },
-    { task: "Manage guest communication (before, during stay)", management: true, clean: false, linen: false },
-    { task: "Restock toilet paper, soaps, amenities", management: true, clean: true, linen: false },
-    { task: "Emergency support (lost key, late check-in)", management: true, clean: false, linen: false },
-  ];
+      const cleaningTasks = [
+        {
+          task: "Full property clean (all rooms, kitchen, bathroom)",
+          management: true,
+          clean: true,
+          linen: false,
+        },
+        {
+          task: "Dusting, vacuuming, mopping",
+          management: true,
+          clean: true,
+          linen: false,
+        },
+        {
+          task: "Change bed linens and make beds",
+          management: true,
+          clean: true,
+          linen: true,
+        },
+        {
+          task: "Replace towels and restock bathroom essentials",
+          management: true,
+          clean: true,
+          linen: true,
+        },
+        {
+          task: "Take out rubbish and replace liners",
+          management: true,
+          clean: true,
+          linen: false,
+        },
+        {
+          task: "Laundry service (washing, drying linen/towels)",
+          management: true,
+          clean: false,
+          linen: true,
+        },
+        {
+          task: "Refill kitchen supplies (tea, coffee, sugar, etc.)",
+          management: true,
+          clean: false,
+          linen: false,
+        },
+        {
+          task: "Guest check-in/check-out coordination",
+          management: true,
+          clean: false,
+          linen: false,
+        },
+        {
+          task: "Report property damages to owner",
+          management: true,
+          clean: true,
+          linen: false,
+        },
+        {
+          task: "Manage guest communication (before, during stay)",
+          management: true,
+          clean: false,
+          linen: false,
+        },
+        {
+          task: "Restock toilet paper, soaps, amenities",
+          management: true,
+          clean: true,
+          linen: false,
+        },
+        {
+          task: "Emergency support (lost key, late check-in)",
+          management: true,
+          clean: false,
+          linen: false,
+        },
+      ];
 
-  const tbody = document.querySelector("#taskTable tbody");
+      const tbody = document.querySelector("#taskTable tbody");
 
-  cleaningTasks.forEach(item => {
-    const row = document.createElement("tr");
+      cleaningTasks.forEach((item) => {
+        const row = document.createElement("tr");
 
-    const taskCell = document.createElement("td");
-    taskCell.textContent = item.task;
+        const taskCell = document.createElement("td");
+        taskCell.textContent = item.task;
 
-    const managementCell = document.createElement("td");
-    managementCell.className = "text-center";
-    managementCell.innerHTML = item.management
-      ? '<span class="checkmark">✔</span>'
-      : '<span class="crossmark">✘</span>';
+        const managementCell = document.createElement("td");
+        managementCell.className = "text-center";
+        managementCell.innerHTML = item.management
+          ? '<span class="checkmark">✔</span>'
+          : '<span class="crossmark">✘</span>';
 
-    const cleanCell = document.createElement("td");
-    cleanCell.className = "text-center";
-    cleanCell.innerHTML = item.clean
-      ? '<span class="checkmark">✔</span>'
-      : '<span class="crossmark">✘</span>';
+        const cleanCell = document.createElement("td");
+        cleanCell.className = "text-center";
+        cleanCell.innerHTML = item.clean
+          ? '<span class="checkmark">✔</span>'
+          : '<span class="crossmark">✘</span>';
 
-    const linenCell = document.createElement("td");
-    linenCell.className = "text-center";
-    linenCell.innerHTML = item.linen
-      ? '<span class="checkmark">✔</span>'
-      : '<span class="crossmark">✘</span>';
+        const linenCell = document.createElement("td");
+        linenCell.className = "text-center";
+        linenCell.innerHTML = item.linen
+          ? '<span class="checkmark">✔</span>'
+          : '<span class="crossmark">✘</span>';
 
-    row.appendChild(taskCell);
-    row.appendChild(managementCell);
-    row.appendChild(cleanCell);
-    row.appendChild(linenCell);
+        row.appendChild(taskCell);
+        row.appendChild(managementCell);
+        row.appendChild(cleanCell);
+        row.appendChild(linenCell);
 
-    tbody.appendChild(row);
-  });
-</script>
+        tbody.appendChild(row);
+      });
+    </script>
   </body>
 </html>
