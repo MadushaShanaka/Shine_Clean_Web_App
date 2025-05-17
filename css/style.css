@@ -11208,5 +11208,7 @@ textarea.form-control {
 .testimony-section .owl-carousel .item .text .mb-1 {
   min-height: 150px;
   max-height: 150px;
-  overflow: scroll;
+  overflow-y: scroll;
+  scrollbar-color: var(--secondary-color) var(--secondary-color);
+  scrollbar-width: thin;
 }
