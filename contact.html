@@ -36,7 +36,7 @@
       <div class="container">
         <div class="row justify-content-between">
           <div class="col-8 col-md d-flex align-items-center">
-            <p class="mb-0 phone" style="display: none;">
+            <p class="mb-0 phone" style="display: none">
               <span class="mailus">Business Reg No:</span>
               <a href="#">00 1234 567</a>
             </p>
@@ -170,7 +170,7 @@
                     <div class="text">
                       <p>
                         <span>Phone:</span>
-                        <a href="tel://1234567920">+61431825545</a>
+                        <a href="tel://1234567920">0431825545</a>
                       </p>
                     </div>
                   </div>
@@ -192,27 +192,31 @@
                     </div>
                   </div>
                 </div>
-                <!-- <div class="col-md-3">
-                  <div class="dbox w-100 text-center">
-                    <div
-                      class="icon d-flex align-items-center justify-content-center"
-                    >
-                      <span class="fa fa-globe"></span>
-                    </div>
-                    <div class="text">
-                      <p><span>Website</span> <a href="#">yoursite.com</a></p>
-                    </div>
-                  </div>
-                </div> -->
               </div>
               <div class="row no-gutters">
-                <div class="col-md-7">
+                <div class="col-12 col-md-7">
                   <div class="contact-wrap w-100 p-md-5 p-4">
                     <h3 class="mb-4">Contact Us</h3>
-                    <div id="failedMessage" style="display: none; color: #ff0000; padding: 10px; margin-top: 10px;">
-						Message sending failed, Please try again later!
-					  </div>
-                    <div id="successMessage" style="display: none; color: #155724; padding: 10px; margin-top: 10px;">
+                    <div
+                      id="failedMessage"
+                      style="
+                        display: none;
+                        color: #ff0000;
+                        padding: 10px;
+                        margin-top: 10px;
+                      "
+                    >
+                      Message sending failed, Please try again later!
+                    </div>
+                    <div
+                      id="successMessage"
+                      style="
+                        display: none;
+                        color: #155724;
+                        padding: 10px;
+                        margin-top: 10px;
+                      "
+                    >
                       Your message was sent, Thank you!
                     </div>
                     <form
@@ -231,7 +235,7 @@
                               name="name"
                               id="name"
                               placeholder="Name"
-							  required
+                              required
                             />
                           </div>
                         </div>
@@ -246,20 +250,22 @@
                               name="email"
                               id="email"
                               placeholder="Email"
-							  required
+                              required
                             />
                           </div>
                         </div>
                         <div class="col-md-12">
                           <div class="form-group">
-                            <label class="label" for="subject">Phone Number</label>
+                            <label class="label" for="subject"
+                              >Phone Number</label
+                            >
                             <input
                               type="text"
                               class="form-control"
                               name="phonenumber"
                               id="phonenumber"
                               placeholder="Phone Number"
-							  required
+                              required
                             />
                           </div>
                         </div>
@@ -272,7 +278,7 @@
                               name="subject"
                               id="subject"
                               placeholder="Subject"
-							  required
+                              required
                             />
                           </div>
                         </div>
@@ -286,14 +292,14 @@
                               cols="30"
                               rows="4"
                               placeholder="Message"
-							  required
+                              required
                             ></textarea>
                           </div>
                         </div>
                         <div class="col-md-12">
                           <div class="form-group">
                             <input
-							  id="sendEmailBtn"
+                              id="sendEmailBtn"
                               type="submit"
                               value="Send Message"
                               class="btn btn-primary"
@@ -305,7 +311,7 @@
                     </form>
                   </div>
                 </div>
-                <div class="col-md-5 d-flex align-items-stretch">
+                <div class="col-12 col-md-5 d-flex align-items-stretch">
                   <div
                     class="info-wrap w-100 p-5 img"
                     style="background-image: url(images/about.jpg)"
@@ -324,7 +330,7 @@
           <div class="row">
             <div class="col-12 col-md-12 col-lg-6 mb-4 mb-md-0">
               <h2 class="footer-heading">Shine Cleaning Experts</h2>
-              <p style="text-align: justify;">
+              <p style="text-align: justify">
                 At Shine Cleaning Expert, we are committed to delivering
                 spotless results with a shine you can trust. Based in Western
                 Australia, we offer residential, commercial, and specialist
@@ -394,13 +400,15 @@
                   <li>
                     <a href="#"
                       ><span class="icon fa fa-phone"></span
-                      ><span class="text">+61431825545</span></a
+                      ><span class="text">0431825545</span></a
                     >
                   </li>
                   <li>
                     <a href="mailto:info@shinecleaningexperts.com.au"
                       ><span class="icon fa fa-paper-plane"></span
-                      ><span class="text">info@shinecleaningexperts.com.au</span></a
+                      ><span class="text"
+                        >info@shinecleaningexperts.com.au</span
+                      ></a
                     >
                   </li>
                 </ul>
@@ -423,6 +431,18 @@
         </div>
       </div>
     </footer>
+
+    <a
+      href="https://wa.me/+61431825545?text=Hello%2C%20I%20have%20a%20question%20about%20your%20services?"
+      class="sce-whatsapp-float"
+      target="_blank"
+      aria-label="Chat on WhatsApp"
+    >
+      <img
+        src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"
+        alt="WhatsApp Chat"
+      />
+    </a>
 
     <!-- loader -->
     <div id="ftco-loader" class="show fullscreen">
@@ -461,43 +481,47 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/scrollax.min.js"></script>
     <script src="js/main.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-	<script>
-	const btn = document.getElementById('sendEmailBtn');
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      const btn = document.getElementById("sendEmailBtn");
 
-		document.getElementById('contactForm')
-		.addEventListener('submit', function(event) {
-		event.preventDefault();
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
 
-		btn.value = 'Sending...';
+          btn.value = "Sending...";
 
-		const serviceID = 'default_service';
-		const templateID = 'template_70ehv17';
+          const serviceID = "default_service";
+          const templateID = "template_70ehv17";
 
-		emailjs.sendForm(serviceID, templateID, this)
-			.then(() => {
-			btn.value = 'Send Email';
-			document.getElementById("successMessage").style.display = "block";
-			document.getElementById("contactForm").reset();
-			setTimeout(() => {
-		  		document.getElementById("successMessage").style.display = "none";
-			}, 5000);	
-			}, (err) => {
-			btn.value = 'Send Email';
-			document.getElementById("failedMessage").style.display = "block";
-			setTimeout(() => {
-		  		document.getElementById("failedMessage").style.display = "none";
-			}, 5000);	
-			});
-		});
+          emailjs.sendForm(serviceID, templateID, this).then(
+            () => {
+              btn.value = "Send Email";
+              document.getElementById("successMessage").style.display = "block";
+              document.getElementById("contactForm").reset();
+              setTimeout(() => {
+                document.getElementById("successMessage").style.display =
+                  "none";
+              }, 5000);
+            },
+            (err) => {
+              btn.value = "Send Email";
+              document.getElementById("failedMessage").style.display = "block";
+              setTimeout(() => {
+                document.getElementById("failedMessage").style.display = "none";
+              }, 5000);
+            }
+          );
+        });
+    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
 
-		
-	</script>
-	<script type="text/javascript"
-	src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  
-  <script type="text/javascript">
-	emailjs.init('WuS5qBwJYLtBYmCN4')
-  </script>
+    <script type="text/javascript">
+      emailjs.init("WuS5qBwJYLtBYmCN4");
+    </script>
   </body>
 </html>
