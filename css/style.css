@@ -9459,7 +9459,7 @@ h1, h2, h3, h4, h5,
 }
 .ftco-counter .block-18 {
   display: block;
-  width: 100%;
+  width: 33%;
 }
 @media (max-width: 991.98px) {
   .ftco-counter .block-18 {
@@ -11145,8 +11145,7 @@ textarea.form-control {
 }
 .sce-trust-indicator-image { 
   grid-area: 3 / 1 / 4 / 2; 
-  padding: 1rem;
-  
+  padding: 1rem;  
  }
 
  .sce-trust-indicator-image img {
@@ -11189,4 +11188,10 @@ textarea.form-control {
   -webkit-mask-size: contain;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
+}
+
+@media (max-width: 767.98px) {
+  .sce-about-img {
+    display: none;
+  }
 }
