@@ -11341,3 +11341,88 @@ textarea.form-control {
   width: 50px;
   color: white;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .sce-quick-start-content {
+    flex-direction: column;
+  }
+
+  .sce-quick-start-step {
+    width: 100% !important;
+  }
+
+
+  .sce-quick-start-step-arrow {
+    clip-path: polygon(50% 15%, 100% 0, 100% 85%, 50% 99%, 0 85%, 0 0);
+    padding: 1rem 0;
+    height: 200px;
+  }
+
+  .sce-quick-start-step:nth-child(1) .sce-quick-start-step-arrow {
+    clip-path: polygon(50% 0, 100% 0, 100% 85%, 50% 99%, 0 85%, 0 0);
+  }
+
+  .sce-quick-start-step:last-child .sce-quick-start-step-arrow {
+    border-radius: 0rem 0rem 1rem 1rem;
+    clip-path: polygon(50% 15%, 100% 0, 100% 100%, 50% 99%, 0 100%, 0 0);
+  }
+}
+
+.feature-card .row p {
+  text-align: justify;
+}
+
+.tile-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tile-img {
+  width: 175px;
+}
+
+.tile {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #f8f9fa;
+  transition: background-color 0.3s, border-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+.tile svg {
+  width: 50px;
+  height: 50px;
+  fill: rgb(127.5, 127.5, 127.5);
+}
+
+.tile.selected {
+  background-color: var(--primary);
+  color: white;
+}
+
+.tile.selected svg {
+ fill: white;
+}
+
+.form-label {
+  font-weight: 500;
+}
+
+.sce-extras {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.sce-extras {
+
+}
