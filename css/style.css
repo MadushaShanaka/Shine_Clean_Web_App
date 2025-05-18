@@ -9620,7 +9620,7 @@ h1, h2, h3, h4, h5,
   .time-open-wrap {
     position: absolute;
     top: 50%;
-    left: -150px;
+    left: -50px;
     transform: translateY(-50%);
   }
 }
@@ -11020,6 +11020,7 @@ textarea.form-control {
 .SCE_faq{
   width: 100%;
   text-align: left;
+  border-width: 0px;
 }
 
 .SCE_faq-header {
@@ -11031,6 +11032,7 @@ textarea.form-control {
   content: '+' !important;
   font-size: 1.5rem;
   transform: none !important;
+  border-width: 0px;
 }
 .SCE_accordion-button:not(.collapsed)::before {
   content: '-' !important;
@@ -11425,4 +11427,9 @@ textarea.form-control {
 
 .sce-extras {
 
+}
+
+.sce_terms-header {
+  text-align: left;
+  margin: 20px 0;
 }

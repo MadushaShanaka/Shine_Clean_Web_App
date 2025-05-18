@@ -1,43 +1,72 @@
 [
-    {
-      "number":"One",
-      "question": "What areas do you service?",
-      "answer": "We provide cleaning services across Perth and surrounding suburbs within a 30 km radius of Perth CBD. If you are unsure whether we cover your area, feel free to contact us, we are happy to confirm!"
-    },
-    {
-      "number":"Two",
-      "question": "How can I book a cleaning service?",
-      "answer": "You can book via our online contact form, call us directly, or email. We will get back to you promptly to confirm the booking."
-    },
-    {
-      "number":"Three",
-      "question": "Do I need to be home during the cleaning?",
-      "answer": "It is up to you! Many clients provide access and return to a sparkling clean home. Rest assured, our police-checked staff treat your space with the utmost respect and care."
-    },
-    {
-      "number":"Four",
-      "question": "Do you bring your own cleaning supplies and equipment?",
-      "answer": "Yes, we bring all necessary cleaning products and tools. We use eco-friendly and non-toxic products, but if you prefer specific items, just let us know in advance."
-    },
-    {
-      "number":"Five",
-      "question": "What if I am not happy with the service?",
-      "answer": "Your satisfaction is our priority. If you are not 100% happy, we will come back and re-clean the area free of charge."
-    },
-    {
-      "number":"Six",
-      "question": "Are your cleaners insured, and background checked?",
-      "answer": "Absolutely. All our cleaners are fully insured and have current police clearances."
-    },
-    {
-      "number":"Seven",
-      "question": "Do you accept payments online?",
-      "answer": "We do not accept payments via the website."
-    },
-    {
-      "number":"Eight",
-      "question": "Do you offer regular cleaning plans?",
-      "answer": "Yes! We offer one-time, weekly, fortnightly, and monthly cleaning packages tailored to your needs."
-    }
-  ]
-  
+  {
+    "number": "One",
+    "question": "What areas do you service?",
+    "answer": "We provide professional cleaning services throughout Perth and surrounding suburbs, covering up to a 30 km radius from the Perth CBD. If you are unsure whether your area is included, feel free to contact us, we are happy to check and confirm."
+  },
+  {
+    "number": "Two",
+    "question": "How can I book a cleaning service?",
+    "answer": "You can book a service by calling us, submitting a request through our online contact form, messaging us on social media, or sending us an email. We will respond promptly to confirm your booking and discuss any specific requirements."
+  },
+  {
+    "number": "Three",
+    "question": "Do I need to be home during the cleaning?",
+    "answer": "Not at all. You are welcome to stay, but many of our clients provide access and go about their day. Our cleaners are police-cleared and trained to treat your property with the utmost respect and care."
+  },
+  {
+    "number": "Four",
+    "question": "Do your cleaners bring their own equipment and supplies?",
+    "answer": "Yes, we bring all the necessary cleaning equipment and products. We use eco-friendly, non-toxic supplies for the safety of your family and pets. If you have specific preferences or would like us to use your products, just let us know in advance."
+  },
+  {
+    "number": "Five",
+    "question": "What types of cleaning services do you offer?",
+    "answer": "We offer a wide range of services including general house cleaning, deep cleaning, end-of-lease cleaning, office cleaning, and custom cleaning plans tailored to your needs. Contact us to discuss what is best for your space."
+  },
+  {
+    "number": "Six",
+    "question": "Do you offer regular or recurring cleaning packages?",
+    "answer": "Yes. We provide flexible scheduling for weekly, fortnightly, monthly, or one-time cleans. We will work with you to create a routine that suits your lifestyle and budget."
+  },
+  {
+    "number": "Seven",
+    "question": "Are your cleaners insured and police-checked?",
+    "answer": "Absolutely. All Shine Cleaning Expert team members are fully insured and have current police clearances. Your safety and peace of mind are important to us."
+  },
+  {
+    "number": "Eight",
+    "question": "What if I’m not satisfied with the service?",
+    "answer": "Customer satisfaction is our top priority. If you are not completely happy, please let us know within 24 hours. We will return and re-clean the affected areas free of charge."
+  },
+  {
+    "number": "Nine",
+    "question": "What do I need to do before the cleaners arrive?",
+    "answer": "We appreciate it if personal items, valuables, and any clutter are put away to allow our team to clean efficiently. If there are any special instructions, please inform us ahead of time."
+  },
+  {
+    "number": "Ten",
+    "question": "Do you clean ovens, windows, and carpets?",
+    "answer": "Yes, we offer add-on services such as oven cleaning, internal window cleaning, and carpet vacuuming. However, for deep carpet steam cleaning or external windows, additional charges may apply, or we may refer a specialist."
+  },
+  {
+    "number": "Eleven",
+    "question": "Can I request the same cleaner each time?",
+    "answer": "We do our best to assign the same cleaner for regular clients, subject to availability. Consistency helps build trust and familiarity, and we always strive to meet that preference."
+  },
+  {
+    "number": "Twelve",
+    "question": "What payment methods do you accept?",
+    "answer": "We accept cash, direct bank transfer, or payment via invoice (with prior arrangement). Currently, we do not accept payments directly through our website."
+  },
+  {
+    "number": "Thirteen",
+    "question": "Is there a cancellation fee?",
+    "answer": "If you need to cancel or reschedule, we kindly ask for at least 24 hours’ notice. Cancellations made with less notice may incur a small fee to cover time and travel costs."
+  },
+  {
+    "number": "Fourteen",
+    "question": "Can you clean after renovations or construction?",
+    "answer": "Yes, we offer post-construction and renovation cleaning services. These jobs typically require more time and equipment, so please contact us for a custom quote."
+  }
+]
