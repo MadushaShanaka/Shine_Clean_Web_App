@@ -11433,3 +11433,7 @@ textarea.form-control {
   text-align: left;
   margin: 20px 0;
 }
+
+.sce-center{
+  text-align: center;
+}
