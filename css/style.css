@@ -11061,11 +11061,10 @@ textarea.form-control {
 .calculator {
   background-color: #ffffff;
   padding: 30px 35px;
-  border-radius: 15px;
+  border-radius:  0 0 1rem 1rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 500px;
-  height: 100%
+  /* height: 100% */
 }
 
 .form-label {
@@ -11101,13 +11100,19 @@ textarea.form-control {
 }
 
 .calculator-result {
-  background-color: white;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  border-radius: 1rem;
-  padding: 1rem;
-  position: absolute;
-  bottom: 0;
-  width: calc(100% - 30px);
+  background-color: var(--primary-bg);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);;
+  border-radius: 1rem 1rem 0 0;
+  /* padding: 1rem; */
+  position: sticky;
+  
+  top: 0;
+  left: 0;
+  /* width: calc(100% - 30px); */
+  width: 100%;
+  height: 200px;
+  padding: 0 2rem;
+  z-index: 999;
 
 }
 
@@ -11397,12 +11402,12 @@ textarea.form-control {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
 .tile svg {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   fill: rgb(127.5, 127.5, 127.5);
 }
 
@@ -11421,8 +11426,21 @@ textarea.form-control {
 
 .sce-extras {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+/* Tablet: 2 columns x 2 rows */
+@media (max-width: 1024px) {
+  .sce-extras {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: 4 rows x 1 column (stacked vertically) */
+@media (max-width: 640px) {
+  .sce-extras {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .sce-extras {
@@ -11436,4 +11454,20 @@ textarea.form-control {
 
 .sce-center{
   text-align: center;
+}
+
+.tile-img {
+  width: calc((100% - 10px)/2);
+}
+
+.sce-extras-items {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.sce-extras-items-label {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
 }
