@@ -10908,6 +10908,18 @@ textarea.form-control {
   display: flex;
 }
 
+.sce-card-home {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  border-radius: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 0px solid white !important;
+
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
 .sce-card {
   padding: 1rem;
   background-color: #e8f5d3;
@@ -11470,4 +11482,37 @@ textarea.form-control {
   display: flex;
   flex-direction: column;
   text-align: start;
+}
+
+.sce-mobile-only {
+  display: none;
+}
+
+/* Show desktop content by default */
+.sce-desktop-only {
+  display: block;
+}
+
+.sce-desktop-only .row{
+    flex-wrap: nowrap; 
+}
+
+
+/* When screen is 768px or less (mobile view) */
+@media (max-width: 767.98px) {
+  .sce-mobile-only {
+    display: block;
+  }
+
+  .sce-desktop-only {
+    display: none;
+  }
+
+  .sce-desktop-only .row{
+    flex-wrap: wrap;
+  }
+  
+  .sce-text-left-mobile{
+    text-align: left !important;
+  }
 }

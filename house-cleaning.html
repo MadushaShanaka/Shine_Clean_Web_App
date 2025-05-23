@@ -515,6 +515,47 @@
                               </div>
                             </div>
                           </div>
+                          <div class="tile" data-value="carpet" vacate>
+                            <div class="sce-extras-items">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="#000000"
+                                width="800px"
+                                height="800px"
+                                viewBox="-16 0 512 512"
+                              >
+                                <path
+                                  d="M0 64v448h96.96v-32h286.08v32H480V64c0-17.56-14.35-31.95-31.91-32H32C14.4 32 0 46.4 0 64zm383.36 384H256V272.79h159.22C384 320 384 320 384 368l-.64 80zM410 240H256V64h64.12c.75 80.93 5.62 101.74 31.88 128l58 48zM96.64 448L96 368c0-48 0-48-31.22-95.21H224V448H96.64zM70 240l58-48c26.26-26.26 31.13-47.07 31.88-128H224v176H70z"
+                                />
+                                <script xmlns="" />
+                              </svg>
+                              <div class="sce-extras-items-label">
+                                <span>Special Carpet Cleaning</span>
+                                <span id="oven_price">$150</span>
+                              </div>
+                            </div>
+                          </div>
+                            <div class="tile" data-value="tile" vacate>
+                           
+                            <div class="sce-extras-items">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="#000000"
+                                width="800px"
+                                height="800px"
+                                viewBox="-16 0 512 512"
+                              >
+                                <path
+                                  d="M0 64v448h96.96v-32h286.08v32H480V64c0-17.56-14.35-31.95-31.91-32H32C14.4 32 0 46.4 0 64zm383.36 384H256V272.79h159.22C384 320 384 320 384 368l-.64 80zM410 240H256V64h64.12c.75 80.93 5.62 101.74 31.88 128l58 48zM96.64 448L96 368c0-48 0-48-31.22-95.21H224V448H96.64zM70 240l58-48c26.26-26.26 31.13-47.07 31.88-128H224v176H70z"
+                                />
+                                <script xmlns="" />
+                              </svg>
+                              <div class="sce-extras-items-label">
+                                <span>Special Tile Cleaning</span>
+                                <span id="oven_price">$130</span>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                         <input
                           type="hidden"
@@ -541,7 +582,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-12">
-            <img src="images/custom/img-1.jpg" alt="House cleaning" />
+            <img src="images/custom/house-clean-home-standard.jpg" alt="House cleaning" />
           </div>
           <div class="col-lg-6 col-md-12">
             <h1>Standard Cleaning</h1>
@@ -576,7 +617,7 @@
             </p>
           </div>
           <div class="col-lg-6 col-md-12">
-            <img src="images/custom/img-1.jpg" alt="House cleaning" />
+            <img src="images/custom/house-clean-home-vacate.jpg" alt="House cleaning" />
           </div>
         </div>
       </div>
@@ -923,7 +964,7 @@
         const noOfRooms = document.getElementById("rooms").value;
         const noOfBaths = document.getElementById("bathrooms").value;
         const bkgDate = document.getElementById("bookingDate").value;
-        const bkgMsg =
+        var bkgMsg =
           "Need " +
           cleaningType +
           " for my house which has " +
@@ -932,6 +973,9 @@
           noOfBaths +
           " bathrooms on " +
           bkgDate;
+          if (extras.value){
+            bkgMsg = bkgMsg + " with extra cleaning on " + extras.value + ".";
+          }
         document.getElementById("booking").value = bkgMsg;
         document.getElementById("bkgMsgDisplay").innerText = bkgMsg;
       }
@@ -1232,6 +1276,11 @@
         window: { price: 50, perRoom: true },
       };
 
+      const vacateCleaningExtras = {
+        carpet: { price: 150, perRoom: false },
+        tile: { price: 130, perRoom: false },
+      };
+
       const roomGroup = document.querySelector('[data-input-id="rooms"]');
       const bathroomGroup = document.querySelector(
         '[data-input-id="bathrooms"]'
@@ -1322,7 +1371,19 @@
                 price += totalExtra;
               });
             }
-          } else if (cleaningType === "vocate") {
+          } else if (cleaningType === "vacate") {
+            const selectedExtras = document.getElementById("extras").value;
+            if (selectedExtras && selectedExtras.length > 0) {
+              selectedExtras.split(",").forEach((key) => {
+                const extra = vacateCleaningExtras[key];
+                if (!extra) return;
+
+                const totalExtra = extra.perRoom
+                  ? extra.price * rooms
+                  : extra.price;
+                price += totalExtra;
+              });
+            }
           }
 
           calcResultHeading.innerText = "Your result is ready!";
@@ -1729,9 +1790,9 @@
     </script>
 
     <script>
-      function showVocateExtras(show) {
+      function showVacateExtras(show) {
         const tiles = document.querySelectorAll(
-          ".tile-group.sce-extras .tile[vocate]"
+          ".tile-group.sce-extras .tile[vacate]"
         );
         tiles.forEach((tile) => {
           if (show) {
@@ -1739,6 +1800,7 @@
           } else {
             tile.classList.add("d-none");
           }
+          tile.classList.remove("selected");
         });
       }
 
@@ -1752,6 +1814,7 @@
           } else {
             tile.classList.add("d-none");
           }
+          tile.classList.remove("selected");
         });
       }
 
@@ -1762,14 +1825,25 @@
           .querySelector('[data-input-id="cleaningType"]')
           .querySelector('[data-value="standard"]');
 
+        const vacateCleaningType = document
+          .querySelector('[data-input-id="cleaningType"]')
+          .querySelector('[data-value="vacate"]');
+
         const extrasContainer = document.querySelector("#extraContainer");
-        showVocateExtras(false);
+        showVacateExtras(false);
         showStandardExtras(false);
 
         if (defaultCleaningType) {
           defaultCleaningType.click();
           extrasContainer.classList.remove("d-none");
           showStandardExtras(true);
+          showVacateExtras(false);
+        }
+        if (vacateCleaningType){
+          vacateCleaningType.click();
+          extrasContainer.classList.remove("d-none");
+          showStandardExtras(false);
+          showVacateExtras(true);
         }
 
         // First select for 1 room
@@ -1802,14 +1876,14 @@
 
           if (cleaningTypeInput.value === "standard") {
             showStandardExtras(true);
-            showVocateExtras(false);
+            showVacateExtras(false);
           } else if (cleaningTypeInput.value === "vacate") {
             showStandardExtras(false);
-            showVocateExtras(true);
+            showVacateExtras(true);
           } else {
             extrasContainer.classList.add("d-none");
             showStandardExtras(false);
-            showVocateExtras(false);
+            showVacateExtras(false);
           }
         });
       });
