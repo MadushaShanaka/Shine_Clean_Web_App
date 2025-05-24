@@ -12,7 +12,7 @@
       <div
         class="icon d-flex align-items-center justify-content-center"
       >
-        <img src="images/google.png" style="height:40px;opacity: 100%;">
+        <img src="images/google.png" style="height:40px;max-width:40px;">
       </div>
       <div class="text">
         <div class="d-flex align-items-center mb-4">
