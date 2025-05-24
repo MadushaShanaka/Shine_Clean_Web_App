@@ -1620,5 +1620,52 @@
         tbody.appendChild(row);
       });
     </script>
+
+    <script>
+      // Wait for DOM to fully load
+      window.addEventListener("DOMContentLoaded", () => {
+
+        // First select for 1 room
+        const defaultRoomTile = document
+          .querySelector('[data-input-id="rooms"]')
+          .querySelector('[data-value="1"]');
+        if (defaultRoomTile) {
+          defaultRoomTile.click();
+        }
+
+        const bathroomGroup = document.querySelector(
+          '[data-input-id="bathrooms"]'
+        );
+
+        // Wait untill bathroom tiles are rendered and then select bathroom
+        setTimeout(() => {
+          const defaultBathroomTile =
+            bathroomGroup.querySelector('[data-value="1"]');
+          if (defaultBathroomTile) {
+            defaultBathroomTile.click();
+          }
+        }, 100);
+
+        const cleaningTypeInput = document.getElementById("cleaningType");
+        const extrasInput = document.getElementById("extras");
+        // Listen for change on the hidden input
+        cleaningTypeInput.addEventListener("change", () => {
+          // reset extras first
+          extrasInput.value = "";
+
+          if (cleaningTypeInput.value === "standard") {
+            showStandardExtras(true);
+            showVacateExtras(false);
+          } else if (cleaningTypeInput.value === "vacate") {
+            showStandardExtras(false);
+            showVacateExtras(true);
+          } else {
+            extrasContainer.classList.add("d-none");
+            showStandardExtras(false);
+            showVacateExtras(false);
+          }
+        });
+      });
+    </script>
   </body>
 </html>
