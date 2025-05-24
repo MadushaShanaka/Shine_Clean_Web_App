@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <title>Shine Cleaning Experts - Services</title>
-    <meta name="description" content="Making homes shine and offices sparkle across Perth." />
+    <meta
+      name="description"
+      content="Making homes shine and offices sparkle across Perth."
+    />
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -174,7 +177,340 @@
       </div>
     </section>
 
-    <section class="py-4 bg-light">
+    <!-- Calculator -->
+    <section class="py-4 bg-light" id="pricingCalculator">
+      <div class="container mt-4" style="margin-bottom: 20px">
+        <div class="calculator-result">
+          <h2 id="calculator-result-heading">Get a instant quote now.</h2>
+          <div class="" id="resultArea">
+            <div class="result">
+              <h5 id="calculator-result-price">
+                Calculate your time and cost!
+              </h5>
+              <p id="calculator-result-time">
+                Let us do the profesional cleaning for you...
+              </p>
+              <button
+                id="calculator-result-booknow"
+                class="btn btn-secondary d-none"
+                onclick="scrollToSection()"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="sce-card muted">
+              <div class="row gap-1">
+                <!-- <div
+                  class="col-lg-6 col-md-12 d-none d-lg-block position-relative"
+                >
+                  <img src="images/custom/img-1.jpg" alt="House cleaning" />
+                  <div class="calculator-result">
+                    <h2 id="calculator-result-heading">
+                      Get a instant quatation now.
+                    </h2>
+                    <div class="" id="resultArea">
+                      <div class="result">
+                        <h5 id="calculator-result-price">
+                          Calculate your time and cost
+                        </h5>
+                        <p id="calculator-result-time">
+                          Let us do the profesional cleaning for you...
+                        </p>
+                        <button
+                          id="calculator-result-booknow"
+                          class="btn btn-secondary d-none"
+                          onclick="scrollToSection()"
+                        >
+                          Book Now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+                <div class="col-lg-12 col-md-12">
+                  <div class="calculator">
+                    <!-- <h3 class="text-center mb-4">
+                      <i class="fas fa-broom"></i> Cleaning Pricing Calculator
+                    </h3> -->
+                    <form id="calcForm">
+                      <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                          <div class="mb-3">
+                            <label class="form-label" for="bookingDate"
+                              >Booking Date</label
+                            >
+                            <input
+                              id="bookingDate"
+                              class="form-control"
+                              type="text"
+                              name="bookingDate"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                          <!-- Cleaning Type as Tiles -->
+                          <div class="mb-3">
+                            <label class="form-label">Cleaning Type</label>
+                            <div
+                              class="tile-group"
+                              data-input-id="cleaningType"
+                            >
+                              <div
+                                class="tile tile-img selected"
+                                data-value="management"
+                              >
+                                <svg
+                                  height="800px"
+                                  width="800px"
+                                  version="1.1"
+                                  id="_x32_"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  viewBox="0 0 512 512"
+                                  xml:space="preserve"
+                                >
+                                  <style type="text/css">
+                                    .st0 {
+                                      fill: currentColor;
+                                    }
+                                  </style>
+                                  <g>
+                                    <path
+                                      class="st0"
+                                      d="M161.33,230.809C132.658,198.504,106.362,164.047,82.482,128c-11.926-18.02-23.265-36.443-33.857-55.246
+		C38.046,53.957,28.1,34.765,19.587,15.236L0,23.712c8.98,20.547,19.192,40.208,30.033,59.516
+		c10.885,19.295,22.459,38.128,34.663,56.558c24.422,36.846,51.305,72.065,80.679,105.182L161.33,230.809z"
+                                    />
+                                    <path
+                                      class="st0"
+                                      d="M225.014,247.51c-7.97-11.684-15.588-23.58-22.869-35.622L123.078,284.4
+		c12.614,9.669,25.477,18.986,38.56,27.894c0.571-1.092,1.274-2.102,2.153-2.988l58.323-59.539
+		C222.993,248.873,223.96,248.125,225.014,247.51z"
+                                    />
+                                    <path
+                                      class="st0"
+                                      d="M425.123,330.563c-53.84-5.765-110.566-24.327-165.226-52.294c-0.557,1.428-1.319,2.769-2.344,3.955
+		l-54.133,63.37c-1.011,1.201-2.256,2.132-3.618,2.856c21.14,27.595,44.698,54.251,71.127,79.274
+		c26.415,25.016,55.744,48.39,88.254,69.04l6.446-16.269c-22.562-14.687-43.541-30.737-63.026-47.768
+		c21.536,13.376,44.127,25.499,67.669,36.062l9.216-23.214c-28.525-15.639-55.1-33.681-79.713-53.43
+		c26.561,16.57,54.588,31.125,83.83,43.043l11.456-28.861c-11.588-6.19-22.883-12.834-33.842-19.873
+		c12.175,4.57,24.481,8.658,36.89,12.225l12.98-32.736c-13.582-5.406-26.957-11.493-40.084-18.233
+		c15.061,2.974,30.019,5.106,44.772,6.417L425.123,330.563z"
+                                    />
+                                    <path
+                                      class="st0"
+                                      d="M245.877,259.465c-4.982-4.571-11.852-5.347-15.398-1.634l-57.37,60.455
+		c-3.56,3.714-1.861,11.075,3.867,16.335c5.743,5.274,13.259,6.322,16.643,2.454l55.202-62.432
+		C252.22,270.782,250.857,264.035,245.877,259.465z"
+                                    />
+                                    <path
+                                      class="st0"
+                                      d="M438.821,301.592c6.124,0,11.09-4.96,11.09-11.076c0-6.109-4.966-11.075-11.09-11.075
+		c-6.109,0-11.075,4.966-11.075,11.075C427.746,296.632,432.712,301.592,438.821,301.592z"
+                                    />
+                                    <path
+                                      class="st0"
+                                      d="M472.62,225.205c-4.147,0-7.501,3.354-7.501,7.501c0,4.146,3.354,7.501,7.501,7.501
+		c4.146,0,7.501-3.355,7.501-7.501C480.121,228.56,476.766,225.205,472.62,225.205z"
+                                    />
+                                    <path
+                                      class="st0"
+                                      d="M450.117,383.348c-5.186,0-9.376,4.19-9.376,9.376c0,5.178,4.19,9.376,9.376,9.376
+		c5.186,0,9.376-4.198,9.376-9.376C459.493,387.538,455.303,383.348,450.117,383.348z"
+                                    />
+                                    <path
+                                      class="st0"
+                                      d="M502.624,331.464c-5.186,0-9.376,4.19-9.376,9.376c0,5.179,4.19,9.376,9.376,9.376
+		c5.186,0,9.376-4.198,9.376-9.376C512,335.654,507.81,331.464,502.624,331.464z"
+                                    />
+                                    <path
+                                      class="st0"
+                                      d="M430.119,443.978c-5.186,0-9.376,4.19-9.376,9.376c0,5.178,4.19,9.376,9.376,9.376
+		c5.186,0,9.376-4.198,9.376-9.376C439.496,448.168,435.306,443.978,430.119,443.978z"
+                                    />
+                                    <path
+                                      class="st0"
+                                      d="M378.36,273.551c5.582,0,10.094-4.513,10.094-10.087c0-5.56-4.512-10.072-10.094-10.072
+		c-5.553,0-10.065,4.513-10.065,10.072C368.295,269.038,372.807,273.551,378.36,273.551z"
+                                    />
+                                  </g>
+                                </svg>
+                                <span>Full Management Service</span>
+                              </div>
+                              <div class="tile tile-img" data-value="clean">
+                                <svg
+                                  fill="currentColor"
+                                  role="img"
+                                  height="800px"
+                                  width="800px"
+                                  version="1.1"
+                                  id="Layer_1"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  viewBox="0 0 299.01 299.01"
+                                  xml:space="preserve"
+                                >
+                                  <g id="XMLID_212_">
+                                    <g>
+                                      <g>
+                                        <path
+                                          d="M265.79,0H112.151c-4.028,0-7.63,1.853-10.002,4.75c2.605,2.296,4.846,4.99,6.657,7.972h156.985
+				c0.112,0,0.204,0.092,0.204,0.205v140.806c0,0.112-0.092,0.205-0.204,0.205H120.192v12.722H265.79
+				c7.127,0,12.927-5.799,12.927-12.927V12.927C278.717,5.799,272.918,0,265.79,0z"
+                                        />
+                                        <path
+                                          d="M133.684,138.25l36.08-27.141c5.077-3.819,6.131-10.994,2.409-16.114c1.851-7.6,6.62-27.18,8.396-34.476l27.451,6.685
+				c1.223,0.298,2.456-0.452,2.754-1.675l2.985-12.258c0.298-1.223-0.452-2.456-1.675-2.754l-71.59-17.435
+				c-1.223-0.298-2.456,0.452-2.754,1.675l-2.985,12.258c-0.298,1.223,0.452,2.456,1.675,2.754l27.451,6.685
+				c-0.383,1.573-6.569,26.971-8.943,36.72l-16.737,12.591l-0.081-16.188c-0.076-15.081-12.404-27.365-27.503-27.365
+				c-7.162,0-56.366,0-62.393,0C26.128,62.224,20.78,77.994,20.722,89.577l-0.429,85.382c-0.033,6.419,5.145,11.648,11.563,11.681
+				c0.02,0,0.04,0,0.06,0c6.348,0,11.588-5.141,11.621-11.564l0.429-85.383c0.007-1.238,1.013-2.237,2.25-2.233
+				c1.237,0.003,2.238,1.008,2.238,2.244c0.001,27.769,0.005,182.647,0.005,195.359c0,7.703,6.243,13.946,13.946,13.946
+				c7.691,0,13.946-6.228,13.946-13.946V173.588h6.022v111.475c0,7.68,6.218,13.946,13.946,13.946
+				c7.688,0,13.946-6.227,13.946-13.946c0-182.046-0.247-82.185-0.253-195.357c0-1.341,1.085-2.428,2.425-2.432
+				c1.341-0.004,2.432,1.078,2.439,2.419c0,0.001,0,0.001,0,0.001l0.198,39.327C115.124,138.594,126.093,143.961,133.684,138.25z"
+                                        />
+                                        <polygon
+                                          points="231.512,23.778 229.738,31.243 222.272,33.017 229.738,34.791 231.512,42.256 233.286,34.791 240.751,33.017 
+				233.286,31.243 			"
+                                        />
+                                        <polygon
+                                          points="245.506,58.685 246.791,53.276 252.201,51.99 246.791,50.705 245.506,45.295 244.221,50.705 238.811,51.99 
+				244.221,53.276 			"
+                                        />
+                                        <polygon
+                                          points="235.328,69.128 233.799,75.565 227.361,77.095 233.799,78.624 235.328,85.062 236.858,78.624 243.296,77.095 
+				236.858,75.565 			"
+                                        />
+                                        <path
+                                          d="M79.52,54.535c13.22,0,24.087-10.717,24.087-24.087c0-13.303-10.784-24.087-24.087-24.087
+				c-13.303,0-24.087,10.784-24.087,24.087C55.433,43.857,66.344,54.535,79.52,54.535z"
+                                        />
+                                      </g>
+                                    </g>
+                                  </g>
+                                </svg>
+                                <span>Full Cleaning Only</span>
+                              </div>
+                              <div class="tile tile-img" data-value="linen">
+                                <svg
+                                  fill="currentColor"
+                                  role="img"
+                                  height="800px"
+                                  width="800px"
+                                  version="1.1"
+                                  id="Layer_1"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  viewBox="0 0 299.01 299.01"
+                                  xml:space="preserve"
+                                >
+                                  <g id="XMLID_212_">
+                                    <g>
+                                      <g>
+                                        <path
+                                          d="M265.79,0H112.151c-4.028,0-7.63,1.853-10.002,4.75c2.605,2.296,4.846,4.99,6.657,7.972h156.985
+				c0.112,0,0.204,0.092,0.204,0.205v140.806c0,0.112-0.092,0.205-0.204,0.205H120.192v12.722H265.79
+				c7.127,0,12.927-5.799,12.927-12.927V12.927C278.717,5.799,272.918,0,265.79,0z"
+                                        />
+                                        <path
+                                          d="M133.684,138.25l36.08-27.141c5.077-3.819,6.131-10.994,2.409-16.114c1.851-7.6,6.62-27.18,8.396-34.476l27.451,6.685
+				c1.223,0.298,2.456-0.452,2.754-1.675l2.985-12.258c0.298-1.223-0.452-2.456-1.675-2.754l-71.59-17.435
+				c-1.223-0.298-2.456,0.452-2.754,1.675l-2.985,12.258c-0.298,1.223,0.452,2.456,1.675,2.754l27.451,6.685
+				c-0.383,1.573-6.569,26.971-8.943,36.72l-16.737,12.591l-0.081-16.188c-0.076-15.081-12.404-27.365-27.503-27.365
+				c-7.162,0-56.366,0-62.393,0C26.128,62.224,20.78,77.994,20.722,89.577l-0.429,85.382c-0.033,6.419,5.145,11.648,11.563,11.681
+				c0.02,0,0.04,0,0.06,0c6.348,0,11.588-5.141,11.621-11.564l0.429-85.383c0.007-1.238,1.013-2.237,2.25-2.233
+				c1.237,0.003,2.238,1.008,2.238,2.244c0.001,27.769,0.005,182.647,0.005,195.359c0,7.703,6.243,13.946,13.946,13.946
+				c7.691,0,13.946-6.228,13.946-13.946V173.588h6.022v111.475c0,7.68,6.218,13.946,13.946,13.946
+				c7.688,0,13.946-6.227,13.946-13.946c0-182.046-0.247-82.185-0.253-195.357c0-1.341,1.085-2.428,2.425-2.432
+				c1.341-0.004,2.432,1.078,2.439,2.419c0,0.001,0,0.001,0,0.001l0.198,39.327C115.124,138.594,126.093,143.961,133.684,138.25z"
+                                        />
+                                        <polygon
+                                          points="231.512,23.778 229.738,31.243 222.272,33.017 229.738,34.791 231.512,42.256 233.286,34.791 240.751,33.017 
+				233.286,31.243 			"
+                                        />
+                                        <polygon
+                                          points="245.506,58.685 246.791,53.276 252.201,51.99 246.791,50.705 245.506,45.295 244.221,50.705 238.811,51.99 
+				244.221,53.276 			"
+                                        />
+                                        <polygon
+                                          points="235.328,69.128 233.799,75.565 227.361,77.095 233.799,78.624 235.328,85.062 236.858,78.624 243.296,77.095 
+				236.858,75.565 			"
+                                        />
+                                        <path
+                                          d="M79.52,54.535c13.22,0,24.087-10.717,24.087-24.087c0-13.303-10.784-24.087-24.087-24.087
+				c-13.303,0-24.087,10.784-24.087,24.087C55.433,43.857,66.344,54.535,79.52,54.535z"
+                                        />
+                                      </g>
+                                    </g>
+                                  </g>
+                                </svg>
+                                <span>Linen Replacement Only</span>
+                              </div>
+                            </div>
+                            <input
+                              type="hidden"
+                              id="cleaningType"
+                              name="cleaningType"
+                              required
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                          <!-- Number of Rooms as Tiles -->
+                          <div class="mb-3">
+                            <label class="form-label">Number of Rooms</label>
+                            <div class="tile-group" data-input-id="rooms"></div>
+                            <input
+                              type="hidden"
+                              id="rooms"
+                              name="rooms"
+                              required
+                            />
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                          <!-- Number of Bathrooms as Tiles -->
+                          <div class="mb-3">
+                            <label class="form-label"
+                              >Number of Bathrooms</label
+                            >
+                            <div class="tile-group" data-input-id="bathrooms">
+                              <div class="tile" data-value="1" data-default>
+                                1
+                              </div>
+                            </div>
+                            <input
+                              type="hidden"
+                              id="bathrooms"
+                              name="bathrooms"
+                              required
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <button type="submit" class="btn btn-primary w-100">
+                        <i class="fas fa-calculator me-2"></i>Calculate Estimate
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="py-4 bg-light">
       <div class="container mt-4" style="margin-bottom: 20px">
         <div class="row">
           <div class="col-12">
@@ -274,7 +610,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="ftco-section bg-primary-light feature-card">
       <div class="container">
@@ -475,7 +811,7 @@
           <div class="row">
             <div class="col-12 col-md-12 col-lg-6 mb-4 mb-md-0">
               <h2 class="footer-heading">Shine Cleaning Experts</h2>
-              <p style="text-align: justify;">
+              <p style="text-align: justify">
                 At Shine Cleaning Expert, we are committed to delivering
                 spotless results with a shine you can trust. Based in Western
                 Australia, we offer residential, commercial, and specialist
@@ -560,7 +896,9 @@
                   <li>
                     <a href="mailto:info@shinecleaningexperts.com.au"
                       ><span class="icon fa fa-paper-plane"></span
-                      ><span class="text">info@shinecleaning<wbr>experts.com.au</span></a
+                      ><span class="text"
+                        >info@shinecleaning<wbr />experts.com.au</span
+                      ></a
                     >
                   </li>
                 </ul>
@@ -621,13 +959,6 @@
       </svg>
     </div>
 
-    <script>
-      fetch("footer.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("footer-placeholder").innerHTML = data;
-        });
-    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -651,17 +982,19 @@
           .scrollIntoView({ behavior: "smooth" });
 
         var cleaningType = document.getElementById("cleaningType").value;
-        if (cleaningType === "management") {
-          cleaningType = "Full management service";
+        if (cleaningType === "linen") {
+          cleaningType = "Linen Replacement Only";
         } else if (cleaningType === "clean") {
           cleaningType = "Full Cleaning Only";
         } else {
-          cleaningType = "Linen Replacement Only";
+          cleaningType = "Full management service";
         }
         const noOfRooms = document.getElementById("rooms").value;
         const noOfBaths = document.getElementById("bathrooms").value;
         const bkgDate = document.getElementById("bookingDate").value;
-        const bkgMsg =
+        const calcPrice = document.getElementById("calculator-result-price").innerText;
+        const calcTime = document.getElementById("calculator-result-time").innerText;
+        var bkgMsg =
           "Need " +
           cleaningType +
           " for my Airbnb which has " +
@@ -669,7 +1002,9 @@
           " rooms and " +
           noOfBaths +
           " bathrooms on " +
-          bkgDate;
+          bkgDate + ".";
+          bkgMsg = bkgMsg + "\n" + calcPrice + ". ";
+          bkgMsg = bkgMsg + calcTime + ".";
         document.getElementById("booking").value = bkgMsg;
         document.getElementById("bkgMsgDisplay").innerText = bkgMsg;
       }
@@ -686,6 +1021,12 @@
         .getElementById("contactForm")
         .addEventListener("submit", function (event) {
           event.preventDefault();
+          if (!document.getElementById("booking").value) {
+            document
+              .getElementById("pricingCalculator")
+              .scrollIntoView({ behavior: "smooth" });
+            return;
+          }
 
           btn.value = "Sending...";
 
@@ -694,7 +1035,7 @@
 
           emailjs.sendForm(serviceID, templateID, this).then(
             () => {
-              btn.value = "Send Email";
+              btn.value = "Book Now";
               document.getElementById("successMessage").style.display = "block";
               document.getElementById("contactForm").reset();
               setTimeout(() => {
@@ -703,7 +1044,7 @@
               }, 5000);
             },
             (err) => {
-              btn.value = "Send Email";
+              btn.value = "Book Now";
               document.getElementById("failedMessage").style.display = "block";
               setTimeout(() => {
                 document.getElementById("failedMessage").style.display = "none";
@@ -742,6 +1083,45 @@
           }
         );
       });
+    </script>
+
+    <script>
+      // Handle tile selection and highlight -- shouldn't change the order...
+
+      function handleTileSelection(group, hiddenInput, onSelect) {
+        const isMulti = group.hasAttribute("data-multi");
+        group.querySelectorAll(".tile").forEach((tile) => {
+          tile.addEventListener("click", () => {
+            if (isMulti) {
+              tile.classList.toggle("selected");
+              const selectedValues = [
+                ...group.querySelectorAll(".tile.selected"),
+              ].map((t) => t.getAttribute("data-value"));
+              hiddenInput.value = selectedValues.join(",");
+
+              if (onSelect) onSelect(selectedValues.map(Number));
+            } else {
+              group
+                .querySelectorAll(".tile")
+                .forEach((t) => t.classList.remove("selected"));
+              tile.classList.add("selected");
+              var value = tile.getAttribute("data-value");
+              hiddenInput.value = value;
+
+              if (onSelect) onSelect(value);
+            }
+          });
+        });
+
+        const bathroomGroup = document.querySelector(
+          '[data-input-id="bathrooms"]'
+        );
+        const defaultBathroomTile =
+          bathroomGroup.querySelector('[data-value="1"]');
+        if (defaultBathroomTile) {
+          defaultBathroomTile.click();
+        }
+      }
     </script>
 
     <script>
@@ -1008,8 +1388,16 @@
         },
       ];
 
-      const roomsSelect = document.getElementById("rooms");
-      const bathroomsSelect = document.getElementById("bathrooms");
+      const roomGroup = document.querySelector('[data-input-id="rooms"]');
+      const bathroomGroup = document.querySelector(
+        '[data-input-id="bathrooms"]'
+      );
+      const extraGroup = document.querySelector('[data-input-id="extras"]');
+
+      const roomsInput = document.getElementById("rooms");
+      const bathroomsInput = document.getElementById("bathrooms");
+      const extrasInput = document.getElementById("extras");
+
       const calcResultHeading = document.getElementById(
         "calculator-result-heading"
       );
@@ -1017,45 +1405,48 @@
       const calcTime = document.getElementById("calculator-result-time");
       const calcBookNow = document.getElementById("calculator-result-booknow");
 
-      // Populate rooms dropdown from data
-      const uniqueRooms = [...new Set(data.map((item) => item.rooms))];
-      uniqueRooms.forEach((room) => {
-        const option = document.createElement("option");
-        option.value = room;
-        option.textContent = room;
-        roomsSelect.appendChild(option);
-      });
+      // Create tile and append to group
+      function createTile(value, group) {
+        const tile = document.createElement("div");
+        tile.className = "tile";
+        tile.setAttribute("data-value", value);
+        tile.textContent = value;
+        group.appendChild(tile);
+      }
 
-      // Dynamically populate bathrooms based on selected room
-      roomsSelect.addEventListener("change", () => {
-        const selectedRoom = parseInt(roomsSelect.value);
-        bathroomsSelect.innerHTML = "";
+      // Populate room tiles
+      const uniqueRooms = [...new Set(data.map((item) => item.rooms))];
+      uniqueRooms.forEach((room) => createTile(room, roomGroup));
+
+      // Populate bathroom tiles dynamically
+      function populateBathrooms(selectedRoom) {
+        var selectedRoomAsInt = Number(selectedRoom);
+        bathroomGroup.innerHTML = "";
+        bathroomsInput.value = "";
 
         const bathroomOptions = data
-          .filter((item) => item.rooms === selectedRoom)
+          .filter((item) => item.rooms === selectedRoomAsInt)
           .map((item) => item.bathrooms);
-
         const uniqueBathrooms = [...new Set(bathroomOptions)];
-        uniqueBathrooms.forEach((bathroom) => {
-          const option = document.createElement("option");
-          option.value = bathroom;
-          option.textContent = bathroom;
-          bathroomsSelect.appendChild(option);
-        });
-      });
 
-      // Trigger initial bathroom population
-      roomsSelect.dispatchEvent(new Event("change"));
+        uniqueBathrooms.forEach((bathroom) =>
+          createTile(bathroom, bathroomGroup)
+        );
+        handleTileSelection(bathroomGroup, bathroomsInput);
+      }
 
-      // Handle form submission
+      // Attach event to room tiles (triggers bathroom repopulation)
+      handleTileSelection(roomGroup, roomsInput, populateBathrooms);
+
+      // Form submission
       document
         .getElementById("calcForm")
         .addEventListener("submit", function (e) {
           e.preventDefault();
 
           const cleaningType = document.getElementById("cleaningType").value;
-          const rooms = parseInt(roomsSelect.value);
-          const bathrooms = parseInt(bathroomsSelect.value);
+          const rooms = parseInt(roomsInput.value);
+          const bathrooms = parseInt(bathroomsInput.value);
 
           const match = data.find(
             (item) => item.rooms === rooms && item.bathrooms === bathrooms
@@ -1066,18 +1457,17 @@
             return;
           }
 
-          var price = null;
-          var time = null;
-
-          if (cleaningType === "management") {
-            price = match.management;
-            time = match.timeManagement;
+          let price = null;
+          let time = null;
+          if (cleaningType === "linen") {
+            price = match.linen;
+            time = match.timeLinen;
           } else if (cleaningType === "clean") {
             price = match.clean;
             time = match.timeClean;
           } else {
-            price = match.linen;
-            time = match.timeLinen;
+            price = match.management;
+            time = match.timeManagement;
           }
 
           calcResultHeading.innerText = "Your result is ready!";
@@ -1086,6 +1476,38 @@
 
           calcBookNow.classList.remove("d-none");
         });
+    </script>
+
+    <script>
+      document.querySelectorAll(".tile-group").forEach((group) => {
+        const inputId = group.getAttribute("data-input-id");
+        const hiddenInput = document.getElementById(inputId);
+        const isMulti = group.hasAttribute("data-multi");
+
+        group.querySelectorAll(".tile").forEach((tile) => {
+          tile.addEventListener("click", () => {
+            if (isMulti) {
+              tile.classList.toggle("selected");
+
+              const selectedValues = Array.from(
+                group.querySelectorAll(".tile.selected")
+              ).map((t) => t.getAttribute("data-value"));
+
+              hiddenInput.value = selectedValues.join(",");
+            } else {
+              // Remove previous selections
+              group
+                .querySelectorAll(".tile")
+                .forEach((t) => t.classList.remove("selected"));
+
+              // Select the clicked tile
+              tile.classList.add("selected");
+              hiddenInput.value = tile.getAttribute("data-value");
+              hiddenInput.dispatchEvent(new Event("change"));
+            }
+          });
+        });
+      });
     </script>
 
     <script>
