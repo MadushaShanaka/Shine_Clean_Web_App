@@ -987,6 +987,8 @@
         const noOfRooms = document.getElementById("rooms").value;
         const noOfBaths = document.getElementById("bathrooms").value;
         const bkgDate = document.getElementById("bookingDate").value;
+        const calcPrice = document.getElementById("calculator-result-price").innerText;
+        const calcTime = document.getElementById("calculator-result-time").innerText;
         var bkgMsg =
           "Need " +
           cleaningType +
@@ -998,7 +1000,11 @@
           bkgDate;
           if (extras.value){
             bkgMsg = bkgMsg + " with extra cleaning on " + extras.value + ".";
+          }else {
+            bkgMsg = bkgMsg + ".";
           }
+          bkgMsg = bkgMsg + "\n" + calcPrice + ". ";
+          bkgMsg = bkgMsg + calcTime + ".";
         document.getElementById("booking").value = bkgMsg;
         document.getElementById("bkgMsgDisplay").innerText = bkgMsg;
       }
