@@ -56,6 +56,21 @@
         background-color: white;
       }
     </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-17066167826"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-17066167826");
+    </script>
   </head>
   <body>
     <div class="wrap">
@@ -780,7 +795,7 @@
                             target="_blank"
                             style="color: #007bff; text-decoration: underline"
                           >
-                            Terms and Conditions </a
+                            Terms and Conditions</a
                           >.
                         </p>
                         <div class="col-md-12">
@@ -992,8 +1007,12 @@
         const noOfRooms = document.getElementById("rooms").value;
         const noOfBaths = document.getElementById("bathrooms").value;
         const bkgDate = document.getElementById("bookingDate").value;
-        const calcPrice = document.getElementById("calculator-result-price").innerText;
-        const calcTime = document.getElementById("calculator-result-time").innerText;
+        const calcPrice = document.getElementById(
+          "calculator-result-price"
+        ).innerText;
+        const calcTime = document.getElementById(
+          "calculator-result-time"
+        ).innerText;
         var bkgMsg =
           "Need " +
           cleaningType +
@@ -1002,9 +1021,10 @@
           " rooms and " +
           noOfBaths +
           " bathrooms on " +
-          bkgDate + ".";
-          bkgMsg = bkgMsg + "\n" + calcPrice + ". ";
-          bkgMsg = bkgMsg + calcTime + ".";
+          bkgDate +
+          ".";
+        bkgMsg = bkgMsg + "\n" + calcPrice + ". ";
+        bkgMsg = bkgMsg + calcTime + ".";
         document.getElementById("booking").value = bkgMsg;
         document.getElementById("bkgMsgDisplay").innerText = bkgMsg;
       }

@@ -56,6 +56,21 @@
         background-color: white;
       }
     </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-17066167826"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-17066167826");
+    </script>
   </head>
   <body>
     <div class="wrap">
@@ -184,7 +199,9 @@
           <h2 id="calculator-result-heading">Get a instant quote now.</h2>
           <div class="" id="resultArea">
             <div class="result">
-              <h5 id="calculator-result-price">Calculate your time and cost!</h5>
+              <h5 id="calculator-result-price">
+                Calculate your time and cost!
+              </h5>
               <p id="calculator-result-time">
                 Let us do the profesional cleaning for you...
               </p>
@@ -544,8 +561,7 @@
                               </div>
                             </div>
                           </div>
-                            <div class="tile" data-value="tile" vacate>
-                           
+                          <div class="tile" data-value="tile" vacate>
                             <div class="sce-extras-items">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -591,7 +607,10 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-12">
-            <img src="images/custom/house-clean-home-standard.jpg" alt="House cleaning" />
+            <img
+              src="images/custom/house-clean-home-standard.jpg"
+              alt="House cleaning"
+            />
           </div>
           <div class="col-lg-6 col-md-12">
             <h1>Standard Cleaning</h1>
@@ -626,7 +645,10 @@
             </p>
           </div>
           <div class="col-lg-6 col-md-12">
-            <img src="images/custom/house-clean-home-vacate.jpg" alt="House cleaning" />
+            <img
+              src="images/custom/house-clean-home-vacate.jpg"
+              alt="House cleaning"
+            />
           </div>
         </div>
       </div>
@@ -775,7 +797,7 @@
                             target="_blank"
                             style="color: #007bff; text-decoration: underline"
                           >
-                            Terms and Conditions </a
+                            Terms and Conditions</a
                           >.
                         </p>
                         <div class="col-md-12">
@@ -806,7 +828,7 @@
           <div class="row">
             <div class="col-12 col-md-12 col-lg-6 mb-4 mb-md-0">
               <h2 class="footer-heading">Shine Cleaning Experts</h2>
-              <p style="text-align: justify;">
+              <p style="text-align: justify">
                 At Shine Cleaning Expert, we are committed to delivering
                 spotless results with a shine you can trust. Based in Western
                 Australia, we offer residential, commercial, and specialist
@@ -891,7 +913,9 @@
                   <li>
                     <a href="mailto:info@shinecleaningexperts.com.au"
                       ><span class="icon fa fa-paper-plane"></span
-                      ><span class="text">info@shinecleaning<wbr>experts.com.au</span></a
+                      ><span class="text"
+                        >info@shinecleaning<wbr />experts.com.au</span
+                      ></a
                     >
                   </li>
                 </ul>
@@ -981,8 +1005,12 @@
         const noOfRooms = document.getElementById("rooms").value;
         const noOfBaths = document.getElementById("bathrooms").value;
         const bkgDate = document.getElementById("bookingDate").value;
-        const calcPrice = document.getElementById("calculator-result-price").innerText;
-        const calcTime = document.getElementById("calculator-result-time").innerText;
+        const calcPrice = document.getElementById(
+          "calculator-result-price"
+        ).innerText;
+        const calcTime = document.getElementById(
+          "calculator-result-time"
+        ).innerText;
         var bkgMsg =
           "Need " +
           cleaningType +
@@ -992,13 +1020,13 @@
           noOfBaths +
           " bathrooms on " +
           bkgDate;
-          if (extras.value){
-            bkgMsg = bkgMsg + " with extra cleaning on " + extras.value + ".";
-          }else {
-            bkgMsg = bkgMsg + ".";
-          }
-          bkgMsg = bkgMsg + "\n" + calcPrice + ". ";
-          bkgMsg = bkgMsg + calcTime + ".";
+        if (extras.value) {
+          bkgMsg = bkgMsg + " with extra cleaning on " + extras.value + ".";
+        } else {
+          bkgMsg = bkgMsg + ".";
+        }
+        bkgMsg = bkgMsg + "\n" + calcPrice + ". ";
+        bkgMsg = bkgMsg + calcTime + ".";
         document.getElementById("booking").value = bkgMsg;
         document.getElementById("bkgMsgDisplay").innerText = bkgMsg;
       }
@@ -1392,8 +1420,6 @@
               selectedExtras.split(",").forEach((key) => {
                 const extra = standardCleaningExtras[key];
                 if (!extra) return;
-
-                
 
                 const totalExtra = extra.perRoom
                   ? extra.price * rooms
@@ -1869,7 +1895,7 @@
           showStandardExtras(true);
           showVacateExtras(false);
         }
-        if (vacateCleaningType){
+        if (vacateCleaningType) {
           vacateCleaningType.click();
           extrasContainer.classList.remove("d-none");
           showStandardExtras(false);
