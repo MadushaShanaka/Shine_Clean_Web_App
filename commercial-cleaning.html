@@ -764,18 +764,12 @@
     <script>
       $(function () {
         const allowedDate = moment().add(2, "days").startOf("day");
-        $('input[name="bookingDate"]').daterangepicker(
-          {
-            singleDatePicker: true,
-            showDropdowns: true,
-            minDate: allowedDate,
-            maxYear: parseInt(moment().format("YYYY"), 10),
-          },
-          function (start, end, label) {
-            var years = moment().diff(start, "years");
-            alert("You are " + years + " years old!");
-          }
-        );
+        $('input[name="bookingDate"]').daterangepicker({
+          singleDatePicker: true,
+          showDropdowns: true,
+          minDate: allowedDate,
+          maxYear: parseInt(moment().format("YYYY"), 10),
+        });
       });
     </script>
 
