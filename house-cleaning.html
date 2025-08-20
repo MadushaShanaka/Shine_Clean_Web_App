@@ -1403,7 +1403,10 @@
           }
 
           let price =
-            cleaningType === "standard" ? match.standard : match.vacate;
+            cleaningType === "standard"
+              ? match.timeStandard * 40
+              : match.timeVacate * 42;
+          price = parseFloat(price.toFixed(1));
           const time =
             cleaningType === "standard" ? match.timeStandard : match.timeVacate;
 
